@@ -1,0 +1,152 @@
+{
+  "objects": [
+    {
+      "name": "sol",
+      "type": "ground",
+      "params": {}
+    },
+    {
+      "name": "camera",
+      "type": "camera",
+      "params": {}
+    },
+    {
+      "name": "sph01",
+      "type": "sphere",
+      "params": {
+        "position": [
+          1,
+          2,
+          3
+        ],
+        "radius": 1.0
+      }
+    },
+    {
+      "name": "sph02",
+      "type": "sphere",
+      "params": {
+        "radius": 2.0
+      }
+    },
+    {
+      "name": "tree1",
+      "type": "tree",
+      "params": {
+        "sizebranch": 17,
+        "sizetrunk": 12,
+        "radius": 3,
+        "position": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "tree2",
+      "type": "tree",
+      "params": {
+        "sizebranch": 17,
+        "sizetrunk": 12,
+        "radius": 3,
+        "position": [
+          30,
+          2,
+          20
+        ]
+      }
+    },
+    {
+      "name": "tree3",
+      "type": "tree",
+      "params": {
+        "sizebranch": 17,
+        "sizetrunk": 12,
+        "radius": 3,
+        "position": [
+          -30,
+          2,
+          20
+        ]
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "mat01",
+      "type": "materiau",
+      "materiau": {}
+    },
+    {
+      "name": "mat02",
+      "type": "materiau",
+      "materiau": {}
+    }
+  ],
+  "sounds": [
+    {
+      "name": "chant-oiseaux_1",
+      "uri": "./assets/sounds/birds/birds.wav",
+      "attached_obj": [],
+      "params": {
+        "volume": 0.1,
+        "loop": "true",
+        "autoplay": "true",
+        "spatialSound": "false"
+      }
+    },
+    {
+      "name": "chant-oiseaux_2",
+      "uri": "./assets/sounds/birds/bird_1.wav",
+      "attached_obj": [
+        "tree1"
+      ],
+      "params": {
+        "volume": 0.2,
+        "loop": "true",
+        "autoplay": "true",
+        "spatialSound": "true"
+      }
+    },
+    {
+      "name": "chant-oiseaux_3",
+      "uri": "./assets/sounds/birds/bird_2.wav",
+      "attached_obj": [
+        "tree2"
+      ],
+      "params": {
+        "volume": 0.2,
+        "loop": "true",
+        "autoplay": "true",
+        "spatialSound": "true"
+      }
+    },
+    {
+      "name": "chant-oiseaux_4",
+      "uri": "./assets/sounds/birds/bird_3.wav",
+      "attached_obj": [
+        "tree3"
+      ],
+      "params": {
+        "volume": 0.1,
+        "loop": "true",
+        "autoplay": "true",
+        "spatialSound": "true"
+      }
+    },
+    {
+      "name": "hymne",
+      "uri": "./assets/sounds/Island/anthem.wav",
+      "attached_obj": [
+        "sph01"
+      ],
+      "params": {
+        "volume": 0.5,
+        "loop": "true",
+        "autoplay": "true",
+        "spatialSound": "true"
+      }
+    }
+  ]
+}
