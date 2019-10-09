@@ -18,11 +18,12 @@ Un fichier script-simple.js
 	<script src="./js/load.js" charset="utf-8"></script>
 	<script src="./js/create.js" charset="utf-8"></script>
 	<script src="./js/utils.js" charset="utf-8"></script>
+	<script src="./js/event.js"></script>
 
 	<script src="https://cdn.babylonjs.com/babylon.js"></script>
-    <script src="dist/cannon.js"></script>
-    <script src="dist/Oimo.js"></script>
-    <script src="dist/babylon.gui.js"></script>
+	<script src="dist/cannon.js"></script>
+	<script src="dist/Oimo.js"></script>
+	<script src="dist/babylon.gui.js"></script>
 </head>
 
 <body>
@@ -50,7 +51,6 @@ Un fichier script-simple.js
 				scene  = new BABYLON.Scene(engine) ;
 
 				scene.gravity = new BABYLON.Vector3(0.0,-9.8,0.0) ;
-
 				// ==============================================================================================
 				// Création de sources lumineuses
 				// ==============================================================================================
@@ -65,21 +65,33 @@ Un fichier script-simple.js
 
 					switch (obj.type) {
 						case 'camera':
-							camera = create_camera(obj.name, obj.params);
-							break;
+						camera = create_camera(obj.name, obj.params);
+						break;
 						case 'ground':
-							create_ground(scene, obj.name, obj.params);
-							break;
+						create_ground(scene, obj.name, obj.params);
+						break;
 						case 'sphere':
-							create_sphere(scene, obj.name, obj.params);
-							break;
+						create_sphere(scene, obj.name, obj.params);
+						break;
 						case 'tree':
-							create_tree(scene, obj.name, obj.params);
-							break;
+						create_tree(scene, obj.name, obj.params);
+						break;
 						default:
-							console.log("error in switch case");
+						console.log("error in switch case");
 					}
 				}
+
+				var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+
+				var ellipse1 = new BABYLON.GUI.Ellipse();
+				ellipse1.width = "10px"
+				ellipse1.height = "10px";
+				ellipse1.color = "red";
+				ellipse1.thickness = 1;
+				ellipse1.background = "red";
+				advancedTexture.addControl(ellipse1);
+
+				
 				set_FPS_mode(scene, canvas, camera);
 				for (var i in data.sounds){
 					sound = data.sounds[i];
@@ -93,10 +105,15 @@ Un fichier script-simple.js
 
 				}) ;
 			})
-			// ==============================================================================================
+
 			// Callback de retaillage
-			// ==============================================================================================
 			window.addEventListener("resize", function (){engine.resize();});
+
+			// Callback de click
+			window.addEventListener("click", (event) =>{
+				handleClick(scene,event)
+			})
+
 		}
 	</script>
 </body>

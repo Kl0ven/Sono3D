@@ -16,8 +16,11 @@ function create_camera(name, params){
 	camera.attachControl(canvas) ;
 	camera.inertia = 0;
 	camera.angularSensibility  = 1000;
+
+
 	return camera
 }
+
 
 
 function create_ground(scene, name, params){
