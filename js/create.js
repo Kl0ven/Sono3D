@@ -48,7 +48,6 @@ function create_sphere(scene, name, params){
 
 
 function create_tree(scene, name, params){
-	console.log("creating tree");
 	let woodMaterial = new BABYLON.StandardMaterial("wood1", scene);
     let woodTexture1 = new BABYLON.WoodProceduralTexture("materiautext", 512, scene);
     woodTexture1.ampScale = 50;

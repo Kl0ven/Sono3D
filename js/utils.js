@@ -40,3 +40,24 @@ function set_FPS_mode(scene, canvas, camera){
 	document.addEventListener("webkitpointerlockchange", pointerlockchange, false);
 
 }
+
+
+function attachSound(scene, objName, sounds, sounds_clic, sounds_look){
+	let mesh = scene.getMeshByName(objName);
+	for (var i in sounds) {
+		let son = scene.getSoundByName(sounds[i]);
+		son.attachToMesh(mesh);
+	}
+
+	mesh.metadata.sounds_clic = []
+	for (var i in sounds_clic){
+		let son = scene.getSoundByName(sounds_clic[i]);
+		mesh.metadata.sounds_clic.push(son)
+	}
+
+	mesh.metadata.sounds_look = []
+	for (var i in sounds_look){
+		let son = scene.getSoundByName(sounds_look[i]);
+		mesh.metadata.sounds_look.push(son)
+	}
+}

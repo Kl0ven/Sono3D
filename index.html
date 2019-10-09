@@ -43,7 +43,6 @@ Un fichier script-simple.js
 			loadJSON('./scene.json', (data) => {
 
 				data = JSON.parse(data)
-				console.log(data);
 				// Création du moteur graphique
 				// ============================
 				canvas = document.getElementById("canvas") ;
@@ -60,6 +59,14 @@ Un fichier script-simple.js
 				spot.diffuse = new BABYLON.Color3(185/255, 246/255, 1);
 				spot.specular = new BABYLON.Color3(1, 1, 1);
 
+				// load sound
+				for (var i in data.sounds){
+					sound = data.sounds[i];
+					loadSound(scene, sound.name,sound.uri, sound.params, elements);
+
+				}
+
+				// load object
 				for (var i in data.objects) {
 					let obj = data.objects[i]
 
@@ -72,9 +79,11 @@ Un fichier script-simple.js
 						break;
 						case 'sphere':
 						create_sphere(scene, obj.name, obj.params);
+						attachSound(scene, obj.name, obj.attached_sound, obj.attached_sound_clic, obj.attached_sound_look);
 						break;
 						case 'tree':
 						create_tree(scene, obj.name, obj.params);
+						attachSound(scene, obj.name, obj.attached_sound, obj.attached_sound_clic, obj.attached_sound_look);
 						break;
 						default:
 						console.log("error in switch case");
@@ -91,14 +100,8 @@ Un fichier script-simple.js
 				ellipse1.background = "red";
 				advancedTexture.addControl(ellipse1);
 
-				
+
 				set_FPS_mode(scene, canvas, camera);
-				for (var i in data.sounds){
-					sound = data.sounds[i];
-					loadSound(scene, sound.name,sound.uri, sound.params, sound.attached_obj, elements);
-
-				}
-
 
 				engine.runRenderLoop(function(){
 					scene.render();

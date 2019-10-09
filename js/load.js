@@ -12,7 +12,7 @@ function loadJSON (url, callback) {
 }
 
 
-function loadSound(scene, name, uri, params, attached_obj){
+function loadSound(scene, name, uri, params){
 	var son = new BABYLON.Sound(
 		name,
 		uri,
@@ -21,12 +21,6 @@ function loadSound(scene, name, uri, params, attached_obj){
 		{loop:params.loop,
 		 autoplay:params.autoplay,
 		 spatialSound:params.spatialSound}) ;
-	for (var i in attached_obj) {
-		let mesh = scene.getMeshByName(attached_obj[i]);
-
-		son.distanceModel = "exponential";
-		son.attachToMesh(mesh) ;
-	}
-
+	son.distanceModel = "exponential";
 	son.setVolume(params.volume)
 }
