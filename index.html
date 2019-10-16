@@ -39,6 +39,13 @@ Un fichier script-simple.js
 		var elements = []
 		var footstep;
 		var spot;
+		var timeSpendOnFocusObject = 0;
+		var focusObject;
+		const focusTime = 3000;
+		var focusSoundPlayed = false
+		var reticle;
+		//We start without being locked.
+		var isLocked = false;
 		window.onload = function (){
 			loadJSON('./scene.json', (data) => {
 
@@ -92,18 +99,21 @@ Un fichier script-simple.js
 
 				var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
 
-				var ellipse1 = new BABYLON.GUI.Ellipse();
-				ellipse1.width = "10px"
-				ellipse1.height = "10px";
-				ellipse1.color = "red";
-				ellipse1.thickness = 1;
-				ellipse1.background = "red";
-				advancedTexture.addControl(ellipse1);
+				reticle = new BABYLON.GUI.Ellipse();
+				reticle.width = "10px"
+				reticle.height = "10px";
+				reticle.color = "red";
+				reticle.thickness = 1;
+				reticle.background = "red";
+				advancedTexture.addControl(reticle);
 
 
 				set_FPS_mode(scene, canvas, camera);
 
 				engine.runRenderLoop(function(){
+					let dt = engine.getDeltaTime();
+					whatchObject(dt);
+					updateReticle();
 					scene.render();
 
 				}) ;
@@ -114,6 +124,7 @@ Un fichier script-simple.js
 
 			// Callback de click
 			window.addEventListener("click", (event) =>{
+				if (!isLocked) return;
 				handleClick(scene,event)
 			})
 

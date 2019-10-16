@@ -1,6 +1,4 @@
 function set_FPS_mode(scene, canvas, camera){
-	//We start without being locked.
-	var isLocked = false;
 
 	// On click event, request pointer lock
 	scene.onPointerDown = function (evt) {
@@ -29,7 +27,10 @@ function set_FPS_mode(scene, canvas, camera){
 			isLocked = false;
 		} else {
 			camera.attachControl(canvas);
-			isLocked = true;
+			setTimeout(() => {
+				isLocked = true;
+			}, 100);
+
 		}
 	};
 

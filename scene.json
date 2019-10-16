@@ -39,8 +39,8 @@
       "name":"tree1",
       "type":"tree",
 	  "attached_sound": ["chant-oiseaux_2"],
-	  "attached_sound_clic": ["hiting_wood"],
-	  "attached_sound_look": [],
+	  "attached_sound_clic": ["hiting_wood","frog"],
+	  "attached_sound_look": ["frog_fact"],
       "params":{
         "sizebranch":17,
         "sizetrunk":12,
@@ -114,7 +114,7 @@
       "name":"chant-oiseaux_2",
       "uri":"./assets/sounds/birds/bird_1.wav",
       "params":{
-        "volume":0.2,
+        "volume":0.1,
         "loop":true,
         "autoplay":true,
         "spatialSound":true
@@ -124,7 +124,7 @@
       "name":"chant-oiseaux_3",
       "uri":"./assets/sounds/birds/bird_2.wav",
       "params":{
-        "volume":0.2,
+        "volume":0.1,
         "loop":true,
         "autoplay":true,
         "spatialSound":true
@@ -144,7 +144,7 @@
       "name":"hymne",
       "uri":"./assets/sounds/Island/anthem.wav",
       "params":{
-        "volume":0.5,
+        "volume":0.25,
         "loop":true,
         "autoplay":true,
         "spatialSound":true
@@ -153,6 +153,26 @@
     {
       "name":"hiting_wood",
       "uri":"./assets/sounds/hiting_wood.mp3",
+      "params":{
+        "volume":0.75,
+        "loop":false,
+        "autoplay":false,
+        "spatialSound":true
+      }
+    },
+    {
+      "name":"frog",
+      "uri":"assets/sounds/frog/grenouille.wav",
+      "params":{
+        "volume":0.75,
+        "loop":false,
+        "autoplay":false,
+        "spatialSound":true
+      }
+    },
+    {
+      "name":"frog_fact",
+      "uri":"./assets/sounds/frog/grenouille_fact.wav",
       "params":{
         "volume":0.75,
         "loop":false,

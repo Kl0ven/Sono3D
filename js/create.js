@@ -12,7 +12,10 @@ function create_camera(name, params){
 	camera.checkCollisions = true ;
 	camera.ellipsoid = new BABYLON.Vector3(1.0,0.7,1.0) ;
 	camera.applyGravity = true ;
-
+	camera.keysUp = [90,38];
+	camera.keysDown = [40,83];
+	camera.keysLeft = [81,37];
+	camera.keysRight = [68,39];
 	camera.attachControl(canvas) ;
 	camera.inertia = 0;
 	camera.angularSensibility  = 1000;
