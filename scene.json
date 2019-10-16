@@ -13,6 +13,9 @@
     {
       "name":"sph01",
       "type":"sphere",
+	  "attached_sound": ["hymne"],
+	  "attached_sound_clic": [],
+	  "attached_sound_look": [],
       "params":{
         "position":[
           1,
@@ -25,6 +28,9 @@
     {
       "name":"sph02",
       "type":"sphere",
+	  "attached_sound": ["hymne"],
+	  "attached_sound_clic": [],
+	  "attached_sound_look": [],
       "params":{
         "radius":2.0
       }
@@ -32,6 +38,9 @@
     {
       "name":"tree1",
       "type":"tree",
+	  "attached_sound": ["chant-oiseaux_2"],
+	  "attached_sound_clic": ["hiting_wood","frog"],
+	  "attached_sound_look": ["frog_fact"],
       "params":{
         "sizebranch":17,
         "sizetrunk":12,
@@ -46,6 +55,9 @@
     {
       "name":"tree2",
       "type":"tree",
+	  "attached_sound": ["chant-oiseaux_3"],
+	  "attached_sound_clic": ["hiting_wood"],
+	  "attached_sound_look": [],
       "params":{
         "sizebranch":17,
         "sizetrunk":12,
@@ -60,6 +72,9 @@
     {
       "name":"tree3",
       "type":"tree",
+	  "attached_sound": ["chant-oiseaux_4"],
+	  "attached_sound_clic": ["hiting_wood"],
+	  "attached_sound_look": [],
       "params":{
         "sizebranch":17,
         "sizetrunk":12,
@@ -88,64 +103,81 @@
     {
       "name":"chant-oiseaux_1",
       "uri":"./assets/sounds/birds/birds.wav",
-      "attached_obj":[],
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
-        "spatialSound":"false"
+        "loop":true,
+        "autoplay":true,
+        "spatialSound":false
       }
     },
     {
       "name":"chant-oiseaux_2",
       "uri":"./assets/sounds/birds/bird_1.wav",
-      "attached_obj":[
-        "tree1"
-      ],
       "params":{
-        "volume":0.2,
-        "loop":"true",
-        "autoplay":"true",
-        "spatialSound":"true"
+        "volume":0.1,
+        "loop":true,
+        "autoplay":true,
+        "spatialSound":true
       }
     },
     {
       "name":"chant-oiseaux_3",
       "uri":"./assets/sounds/birds/bird_2.wav",
-      "attached_obj":[
-        "tree2"
-      ],
       "params":{
-        "volume":0.2,
-        "loop":"true",
-        "autoplay":"true",
-        "spatialSound":"true"
+        "volume":0.1,
+        "loop":true,
+        "autoplay":true,
+        "spatialSound":true
       }
     },
     {
       "name":"chant-oiseaux_4",
       "uri":"./assets/sounds/birds/bird_3.wav",
-      "attached_obj":[
-        "tree3"
-      ],
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
-        "spatialSound":"true"
+        "loop":true,
+        "autoplay":true,
+        "spatialSound":true
       }
     },
     {
       "name":"hymne",
       "uri":"./assets/sounds/Island/anthem.wav",
-      "attached_obj":[
-        "sph01"
-      ],
       "params":{
-        "volume":0.5,
-        "loop":"true",
-        "autoplay":"true",
-        "spatialSound":"true"
+        "volume":0.25,
+        "loop":true,
+        "autoplay":true,
+        "spatialSound":true
+      }
+    },
+    {
+      "name":"hiting_wood",
+      "uri":"./assets/sounds/hiting_wood.mp3",
+      "params":{
+        "volume":0.75,
+        "loop":false,
+        "autoplay":false,
+        "spatialSound":true
+      }
+    },
+    {
+      "name":"frog",
+      "uri":"assets/sounds/frog/grenouille.wav",
+      "params":{
+        "volume":0.75,
+        "loop":false,
+        "autoplay":false,
+        "spatialSound":true
+      }
+    },
+    {
+      "name":"frog_fact",
+      "uri":"./assets/sounds/frog/grenouille_fact.wav",
+      "params":{
+        "volume":0.75,
+        "loop":false,
+        "autoplay":false,
+        "spatialSound":true
       }
     }
   ]

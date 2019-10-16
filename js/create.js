@@ -12,12 +12,18 @@ function create_camera(name, params){
 	camera.checkCollisions = true ;
 	camera.ellipsoid = new BABYLON.Vector3(1.0,0.7,1.0) ;
 	camera.applyGravity = true ;
-
+	camera.keysUp = [90,38];
+	camera.keysDown = [40,83];
+	camera.keysLeft = [81,37];
+	camera.keysRight = [68,39];
 	camera.attachControl(canvas) ;
 	camera.inertia = 0;
 	camera.angularSensibility  = 1000;
+
+
 	return camera
 }
+
 
 
 function create_ground(scene, name, params){
@@ -45,7 +51,6 @@ function create_sphere(scene, name, params){
 
 
 function create_tree(scene, name, params){
-	console.log("creating tree");
 	let woodMaterial = new BABYLON.StandardMaterial("wood1", scene);
     let woodTexture1 = new BABYLON.WoodProceduralTexture("materiautext", 512, scene);
     woodTexture1.ampScale = 50;
