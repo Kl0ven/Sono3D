@@ -14,16 +14,17 @@ Un fichier script-simple.js
 	<meta charset="utf-8"/>
 	<title>Babylon - Basic scene</title>
 	<link href="css/main.css" rel="stylesheet" />
-	<script src="dist/babylon.custom.js"></script>
-	<script src="./js/load.js" charset="utf-8"></script>
-	<script src="./js/create.js" charset="utf-8"></script>
-	<script src="./js/utils.js" charset="utf-8"></script>
-	<script src="./js/event.js"></script>
-
+	<!-- <script src="dist/babylon.custom.js"></script> -->
 	<script src="https://cdn.babylonjs.com/babylon.js"></script>
 	<script src="dist/cannon.js"></script>
 	<script src="dist/Oimo.js"></script>
 	<script src="dist/babylon.gui.js"></script>
+
+
+	<script src="./js/load.js" charset="utf-8"></script>
+	<script src="./js/create.js" charset="utf-8"></script>
+	<script src="./js/utils.js" charset="utf-8"></script>
+	<script src="./js/event.js"></script>
 </head>
 
 <body>
@@ -72,7 +73,6 @@ Un fichier script-simple.js
 					loadSound(scene, sound.name,sound.uri, sound.params, elements);
 
 				}
-
 				// load object
 				for (var i in data.objects) {
 					let obj = data.objects[i]
