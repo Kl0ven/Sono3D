@@ -84,6 +84,14 @@ window.onload = function (){
 			scene.render();
 
 		}) ;
+
+		// Append glTF model to scene.
+		BABYLON.SceneLoader.Append("https://www.babylonjs-playground.com/scenes/BoomBox/", "BoomBox.gltf", scene, function (scene) {
+		let obj = scene.getMeshByID("BoomBox");
+		obj.scaling = new BABYLON.Vector3(20,20,20);
+		obj.position.y = 1;
+
+		});
 	})
 
 	// Callback de retaillage
