@@ -1,0 +1,14 @@
+Input de la table Objects,,,,,,
+name,type,attached_sound,attached_sound_clic,attached_sound_look,params,mot_cle
+arbre1,tree,[],"[""chene""]","[""feuille_morte""]","{""sizebranch"": 17, ""sizetrunk"": 12, ""radius"": 3, ""position"": [15, 2, 3]} ",brest
+arbre2,tree,[],"[""pigeon_fact""]","[""pigeon""]","{""sizebranch"": 17, ""sizetrunk"": 12, ""radius"": 3, ""position"": [1, 2, 30]} ",brest
+arbre3,tree,[],"[""nid_abeille""]","[""abeille""]","{""sizebranch"": 17, ""sizetrunk"": 12, ""radius"": 3, ""position"": [1, 2, 3]} ",brest
+sphere1,sphere,[],"[""grenouille_fact""]","[""grenouille""]","{""position"": [10, 2, 10], ""radius"": 1.0} ",brest
+sol1,ground,[],[],[],{},brest
+arbre4,tree,[],"[""cigale_fact""]","[""cigale""]","{""sizebranch"": 17, ""sizetrunk"": 12, ""radius"": 3, ""position"": [15, 2, 3]} ",azur
+arbre5,tree,[],"[""olivier_fact""]","[""roussignol""]","{""sizebranch"": 17, ""sizetrunk"": 12, ""radius"": 3, ""position"": [1, 2, 30]} ",azur
+arbre6,tree,[],"[""ruisseau_fact""]","[""ruisseau""]","{""sizebranch"": 17, ""sizetrunk"": 12, ""radius"": 3, ""position"": [1, 2, 3]} ",azur
+sphere2,sphere,[],"[""moustique_fact""]","[""moustique""]","{""position"": [10, 2, 10], ""radius"": 1.0} ",azur
+sol2,ground,[],[],[],{},azur
+camera1,camera,[],[],[],{},brest
+camera2,camera,[],[],[],{},azur

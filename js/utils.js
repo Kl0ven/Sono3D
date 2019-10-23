@@ -1,6 +1,4 @@
 function set_FPS_mode(scene, canvas, camera){
-	//We start without being locked.
-	var isLocked = false;
 
 	// On click event, request pointer lock
 	scene.onPointerDown = function (evt) {
@@ -29,7 +27,10 @@ function set_FPS_mode(scene, canvas, camera){
 			isLocked = false;
 		} else {
 			camera.attachControl(canvas);
-			isLocked = true;
+			setTimeout(() => {
+				isLocked = true;
+			}, 100);
+
 		}
 	};
 
@@ -39,4 +40,25 @@ function set_FPS_mode(scene, canvas, camera){
 	document.addEventListener("mozpointerlockchange", pointerlockchange, false);
 	document.addEventListener("webkitpointerlockchange", pointerlockchange, false);
 
+}
+
+
+function attachSound(scene, objName, sounds, sounds_clic, sounds_look){
+	let mesh = scene.getMeshByName(objName);
+	for (var i in sounds) {
+		let son = scene.getSoundByName(sounds[i]);
+		son.attachToMesh(mesh);
+	}
+
+	mesh.metadata.sounds_clic = []
+	for (var i in sounds_clic){
+		let son = scene.getSoundByName(sounds_clic[i]);
+		mesh.metadata.sounds_clic.push(son)
+	}
+
+	mesh.metadata.sounds_look = []
+	for (var i in sounds_look){
+		let son = scene.getSoundByName(sounds_look[i]);
+		mesh.metadata.sounds_look.push(son)
+	}
 }
