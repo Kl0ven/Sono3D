@@ -1,0 +1,25 @@
+﻿Input de la table sounds;;;
+name;uri;params;mot_cle
+feuille_morte;assets/sounds/feuille_morte.wav;"{""volume"": 0.1, ""loop"": false, ""autoplay"": false, ""spatialSound"": true}";brest
+chene;assets/sounds/chene.wav;"{""volume"": 0.1, ""loop"": false, ""autoplay"": false, ""spatialSound"": true}";brest
+pigeon;assets/sounds/pigeon.wav;"{""volume"": 0.1, ""loop"": false, ""autoplay"": false, ""spatialSound"": true}";brest
+pigeon_fact;assets/sounds/pigeon_fact.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";brest
+abeille;assets/sounds/abeille.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";brest
+nid_abeille;assets/sounds/nid_abeille.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";brest
+grenouille;assets/sounds/grenouille.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";brest
+grenouille_fact;assets/sounds/grenouille_fact.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";brest
+averse_fact;assets/sounds/averse_fact.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""false""}";brest
+pluie;assets/sounds/pluie.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""false""}";brest
+vent;assets/sounds/vent.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""false""}";brest
+musique_brest;assets/sounds/musique_brest.wav;"{""volume"": 0.1, ""loop"": ""true"", ""autoplay"": ""true"", ""spatialSound"": ""false""}";brest
+cigale;assets/sounds/cigale.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";azur
+cigale_fact;assets/sounds/cigale_fact.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";azur
+roussignol;assets/sounds/roussignol.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";azur
+olivier_fact;assets/sounds/olivier_fact.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";azur
+ruisseau;assets/sounds/ruisseau.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";azur
+ruisseau_fact;assets/sounds/ruisseau_fact.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";azur
+moustique;assets/sounds/moustique.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";azur
+moustique_fact;assets/sounds/moustique_fact.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""true""}";azur
+orage_fact;assets/sounds/orage_fact.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""false""}";azur
+orage;assets/sounds/orage.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""false"", ""spatialSound"": ""false""}";azur
+fakear_chakra;assets/sounds/fakear_chakra.wav;"{""volume"": 0.1, ""loop"": ""false"", ""autoplay"": ""true"", ""spatialSound"": ""false""}";azur
