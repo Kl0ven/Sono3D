@@ -18,9 +18,9 @@ function loadSound(scene, name, uri, params){
 		uri,
 		scene,
 		function(){},
-		{loop:params.loop,
-		 autoplay:params.autoplay,
-		 spatialSound:params.spatialSound}) ;
+		{loop:params.loop == 'true' ? true : false ,
+		 autoplay:params.autoplay== 'true' ? true : false,
+		 spatialSound:params.spatialSound== 'true' ? true : false}) ;
 	if (params.hasOwnProperty('timeCode')){
 		son.setVolume(0)
 		setTimeout(() => {

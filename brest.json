@@ -15,7 +15,7 @@
         "sizetrunk":12,
         "radius":3,
         "position":[
-          5,
+          15,
           2,
           3
         ]
@@ -38,8 +38,8 @@
         "radius":3,
         "position":[
           1,
-          1,
-          1
+          2,
+          30
         ]
       },
       "mot_cle":"brest"
@@ -78,9 +78,9 @@
       ],
       "params":{
         "position":[
-          4,
-          4,
-          3
+          10,
+          2,
+          10
         ],
         "radius":1.0
       },
@@ -94,17 +94,25 @@
       "attached_sound_look":[],
       "params":{},
       "mot_cle":"brest"
+    },
+    {
+      "name":"camera1",
+      "type":"camera",
+      "attached_sound":[],
+      "attached_sound_clic":[],
+      "attached_sound_look":[],
+      "params":{},
+      "mot_cle":"brest"
     }
   ],
-  "materials":[],
   "sounds":[
     {
       "name":"feuille_morte",
       "uri":"assets/sounds/feuille_morte.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"true"
       },
       "mot_cle":"brest"
@@ -114,8 +122,8 @@
       "uri":"assets/sounds/chene.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"true"
       },
       "mot_cle":"brest"
@@ -125,8 +133,8 @@
       "uri":"assets/sounds/pigeon.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"true"
       },
       "mot_cle":"brest"
@@ -136,8 +144,8 @@
       "uri":"assets/sounds/pigeon_fact.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"true"
       },
       "mot_cle":"brest"
@@ -147,8 +155,8 @@
       "uri":"assets/sounds/abeille.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"true"
       },
       "mot_cle":"brest"
@@ -158,8 +166,8 @@
       "uri":"assets/sounds/nid_abeille.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"true"
       },
       "mot_cle":"brest"
@@ -169,8 +177,8 @@
       "uri":"assets/sounds/grenouille.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"true"
       },
       "mot_cle":"brest"
@@ -180,8 +188,8 @@
       "uri":"assets/sounds/grenouille_fact.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"true"
       },
       "mot_cle":"brest"
@@ -191,8 +199,8 @@
       "uri":"assets/sounds/averse_fact.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"false"
       },
       "mot_cle":"brest"
@@ -202,8 +210,8 @@
       "uri":"assets/sounds/pluie.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"false"
       },
       "mot_cle":"brest"
@@ -213,8 +221,8 @@
       "uri":"assets/sounds/vent.wav",
       "params":{
         "volume":0.1,
-        "loop":"true",
-        "autoplay":"true",
+        "loop":"false",
+        "autoplay":"false",
         "spatialSound":"false"
       },
       "mot_cle":"brest"
