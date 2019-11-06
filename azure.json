@@ -3,6 +3,7 @@
     {
       "name":"arbre4",
       "type":"tree",
+	  "radius_nimbus": 20,
       "attached_sound":[],
       "attached_sound_clic":[
         "cigale_fact"

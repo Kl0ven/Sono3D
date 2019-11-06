@@ -32,6 +32,7 @@ function create_ground(scene, name, params){
 	sol.material              = new BABYLON.StandardMaterial("blanc",scene) ;
 	sol.material.diffuseColor  = new BABYLON.Color3(1.0,1.0,1.0) ;
 	sol.metadata = {"type": 'ground'}
+	return sol
 }
 
 
@@ -47,6 +48,8 @@ function create_sphere(scene, name, params){
 	sph.position.y = y ;
 	sph.position.z = z ;
 	sph.metadata = {"type": 'sphere'}
+	return sph;
+
 }
 
 
@@ -67,4 +70,5 @@ function create_tree(scene, name, params){
 	tree.position.y = y ;
 	tree.position.z = z ;
 	tree.metadata = {"type": 'tree'}
+	return tree
 }

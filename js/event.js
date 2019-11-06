@@ -63,3 +63,28 @@ function updateReticle(){
 		reticle.background = "red";
 	}
 }
+
+function updateNimbus() {
+	let camPos = new BABYLON.Vector3();
+	camPos = camera.globalPosition;
+	let nearestObjects = scene.meshes
+	let obj;
+	let direction;
+	let objectPosition;
+	var ray;
+	for (var i in nearestObjects) {
+		obj = nearestObjects[i];
+		objectPosition = obj.getAbsolutePosition().clone()
+		if (obj.metadata !== null && obj.metadata.hasOwnProperty('radius_nimbus') && BABYLON.Vector3.Distance(camPos, objectPosition) < obj.metadata.radius_nimbus){
+			playSeq(obj);
+		}
+	}
+}
+
+
+function playSeq(mesh) {
+	if(obj.metadata !== null && obj.metadata.hasOwnProperty("sequenceur") && !obj.metadata.sequenceur.isplaying()){
+		obj.metadata.play()
+	}
+
+}
