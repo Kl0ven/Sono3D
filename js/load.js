@@ -21,17 +21,6 @@ function loadSound(scene, name, uri, params){
 		{loop:params.loop == 'true' ? true : false ,
 		 autoplay:params.autoplay== 'true' ? true : false,
 		 spatialSound:params.spatialSound== 'true' ? true : false}) ;
-	if (params.hasOwnProperty('timeCode')){
-		son.setVolume(0)
-		setTimeout(() => {
-			son.play();
-			son.setVolume(params.volume, 3)
-			console.log(son);
-		},params.timeCode * 1000);
-	} else {
 		son.distanceModel = "exponential";
 		son.setVolume(params.volume)
-	}
-
-
 }
