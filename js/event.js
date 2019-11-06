@@ -83,8 +83,8 @@ function updateNimbus() {
 
 
 function playSeq(mesh) {
-	if(obj.metadata !== null && obj.metadata.hasOwnProperty("sequenceur") && !obj.metadata.sequenceur.isplaying()){
-		obj.metadata.play()
+	if(mesh.metadata !== null && mesh.metadata.hasOwnProperty("sequenceur") && !mesh.metadata.sequenceur.isplaying()){
+		mesh.metadata.play()
 	}
 
 }

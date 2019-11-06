@@ -48,7 +48,7 @@ Un fichier script-simple.js
 		//We start without being locked.
 		var isLocked = false;
 		window.onload = function (){
-			loadJSON('./azure.json', (data) => {
+			loadJSON('./scene.json', (data) => {
 
 				data = JSON.parse(data)
 				// Création du moteur graphique
@@ -66,32 +66,30 @@ Un fichier script-simple.js
 				spot = new BABYLON.SpotLight("spotLight", new BABYLON.Vector3(0, 30, 0), new BABYLON.Vector3(0, -1, 0), Math.PI / 3, 2, scene);
 				spot.diffuse = new BABYLON.Color3(185/255, 246/255, 1);
 				spot.specular = new BABYLON.Color3(1, 1, 1);
-
 				// load sound
-				for (var i in data.sounds){
-					sound = data.sounds[i];
-					loadSound(scene, sound.name,sound.uri, sound.params, elements);
+				for (var i in data.sons){
+					sound = data.sons[i];
+					loadSound(scene, sound.nom,sound.uri, sound.volume, sound.spatial);
 
 				}
+
+				camera = create_camera("camera");
+
 				// load object
-				for (var i in data.objects) {
-					let obj = data.objects[i]
+				for (var i in data.meshs) {
+					let obj = data.meshs[i]
 					let m = null;
 					switch (obj.type) {
-						case 'camera':
-						camera = create_camera(obj.name, obj.params);
-						m = camera;
-						break;
 						case 'ground':
-						m = create_ground(scene, obj.name, obj.params);
+						m = create_ground(scene, obj.nom);
 						break;
 						case 'sphere':
-						m = create_sphere(scene, obj.name, obj.params);
-						attachSound(scene, obj.name, obj.attached_sound, obj.attached_sound_clic, obj.attached_sound_look);
+						m = create_sphere(scene, obj);
+						attachSound(scene, obj);
 						break;
 						case 'tree':
-						m = create_tree(scene, obj.name, obj.params);
-						attachSound(scene, obj.name, obj.attached_sound, obj.attached_sound_clic, obj.attached_sound_look);
+						m = create_tree(scene, obj);
+						attachSound(scene, obj);
 						break;
 						default:
 					}

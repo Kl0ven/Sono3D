@@ -12,15 +12,15 @@ function loadJSON (url, callback) {
 }
 
 
-function loadSound(scene, name, uri, params){
+function loadSound(scene, name, uri, vol, spatial){
 	var son = new BABYLON.Sound(
 		name,
 		uri,
 		scene,
 		function(){},
-		{loop:params.loop == 'true' ? true : false ,
-		 autoplay:params.autoplay== 'true' ? true : false,
-		 spatialSound:params.spatialSound== 'true' ? true : false}) ;
+		{loop: false ,
+		 autoplay: false,
+		 spatialSound: spatial}) ;
 		son.distanceModel = "exponential";
-		son.setVolume(params.volume)
+		son.setVolume(vol)
 }
