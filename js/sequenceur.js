@@ -1,0 +1,9 @@
+class Sequenceur {
+	constructor() {
+
+	}
+
+	isPlaying(){
+		
+	}
+}
