@@ -76,25 +76,32 @@ Un fichier script-simple.js
 				// load object
 				for (var i in data.objects) {
 					let obj = data.objects[i]
-
+					let m = null;
 					switch (obj.type) {
 						case 'camera':
 						camera = create_camera(obj.name, obj.params);
+						m = camera;
 						break;
 						case 'ground':
-						create_ground(scene, obj.name, obj.params);
+						m = create_ground(scene, obj.name, obj.params);
 						break;
 						case 'sphere':
-						create_sphere(scene, obj.name, obj.params);
+						m = create_sphere(scene, obj.name, obj.params);
 						attachSound(scene, obj.name, obj.attached_sound, obj.attached_sound_clic, obj.attached_sound_look);
 						break;
 						case 'tree':
-						create_tree(scene, obj.name, obj.params);
+						m = create_tree(scene, obj.name, obj.params);
 						attachSound(scene, obj.name, obj.attached_sound, obj.attached_sound_clic, obj.attached_sound_look);
 						break;
 						default:
-						console.log("error in switch case");
 					}
+					if (obj.hasOwnProperty("radius_nimbus")){
+						if (m !== null) {
+							m.metadata.radius_nimbus = obj.radius_nimbus;
+						}
+					}
+
+
 				}
 
 				var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
@@ -113,6 +120,7 @@ Un fichier script-simple.js
 				engine.runRenderLoop(function(){
 					let dt = engine.getDeltaTime();
 					whatchObject(dt);
+					updateNimbus();
 					updateReticle();
 					scene.render();
 
