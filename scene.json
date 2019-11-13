@@ -10,7 +10,7 @@
       "nom_seq_focus": "oiseau1",
       "nom_seq_nimbus": "oiseau1",
       "nom_seq_classic": "oiseau2",
-      "x" : 0.0,
+      "x" : -10.0,
       "y" : 2.0,
       "z" : 0.0,
       "radius_nimbus": 5.0
@@ -55,7 +55,7 @@
   ],
   "sequenceur": [{
     "nom": "oiseau1",
-    "loop": false,
+    "loop": true,
     "sons": [[1000,"oiseau1",10],[2000,"oiseau2",10]]
   },{
     "nom": "oiseau2",
