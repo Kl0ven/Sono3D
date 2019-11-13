@@ -63,3 +63,7 @@ function attachSound(scene, obj){
 		mesh.metadata.seq_click = getSeqByName(obj.nom_seq_click)
 	}
 }
+
+function getSeqByName(name){
+	return sequences[name];
+}
