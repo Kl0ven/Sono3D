@@ -15,7 +15,7 @@ function loadJSON (url, callback) {
 function loadSound(scene, name, uri, vol, spatial){
 	var son = new BABYLON.Sound(
 		name,
-		uri,
+		soundUriBase + uri,
 		scene,
 		function(){},
 		{loop: false ,

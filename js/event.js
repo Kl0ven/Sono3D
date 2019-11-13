@@ -62,7 +62,7 @@ function updateNimbus() {
 		obj = nearestObjects[i];
 		objectPosition = obj.getAbsolutePosition().clone()
 		if (obj.metadata !== null && obj.metadata.hasOwnProperty('radius_nimbus') && BABYLON.Vector3.Distance(camPos, objectPosition) < obj.metadata.radius_nimbus){
-			// playSeq(obj, "seq_nimbus");
+			playSeq(obj, "seq_nimbus");
 		}
 	}
 }
