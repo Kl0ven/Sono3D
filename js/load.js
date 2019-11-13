@@ -12,26 +12,15 @@ function loadJSON (url, callback) {
 }
 
 
-function loadSound(scene, name, uri, params){
+function loadSound(scene, name, uri, vol, spatial){
 	var son = new BABYLON.Sound(
 		name,
-		uri,
+		soundUriBase + uri,
 		scene,
 		function(){},
-		{loop:params.loop == 'true' ? true : false ,
-		 autoplay:params.autoplay== 'true' ? true : false,
-		 spatialSound:params.spatialSound== 'true' ? true : false}) ;
-	if (params.hasOwnProperty('timeCode')){
-		son.setVolume(0)
-		setTimeout(() => {
-			son.play();
-			son.setVolume(params.volume, 3)
-			console.log(son);
-		},params.timeCode * 1000);
-	} else {
+		{loop: false ,
+		 autoplay: false,
+		 spatialSound: spatial}) ;
 		son.distanceModel = "exponential";
-		son.setVolume(params.volume)
-	}
-
-
+		son.setVolume(vol)
 }

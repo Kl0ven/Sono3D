@@ -43,22 +43,27 @@ function set_FPS_mode(scene, canvas, camera){
 }
 
 
-function attachSound(scene, objName, sounds, sounds_clic, sounds_look){
-	let mesh = scene.getMeshByName(objName);
-	for (var i in sounds) {
-		let son = scene.getSoundByName(sounds[i]);
-		son.attachToMesh(mesh);
+function attachSound(scene, obj){
+	let mesh = scene.getMeshByName(obj.nom);
+
+	if (obj.nom_seq_classic !== null) {
+		mesh.metadata.seq_classic = getSeqByName(obj.nom_seq_classic)
+		mesh.metadata.seq_classic.play()
 	}
 
-	mesh.metadata.sounds_clic = []
-	for (var i in sounds_clic){
-		let son = scene.getSoundByName(sounds_clic[i]);
-		mesh.metadata.sounds_clic.push(son)
+	if (obj.nom_seq_focus !== null) {
+		mesh.metadata.seq_focus = getSeqByName(obj.nom_seq_focus)
 	}
 
-	mesh.metadata.sounds_look = []
-	for (var i in sounds_look){
-		let son = scene.getSoundByName(sounds_look[i]);
-		mesh.metadata.sounds_look.push(son)
+	if (obj.nom_seq_nimbus !== null) {
+		mesh.metadata.seq_nimbus = getSeqByName(obj.nom_seq_nimbus)
 	}
+
+	if (obj.nom_seq_click !== null) {
+		mesh.metadata.seq_click = getSeqByName(obj.nom_seq_click)
+	}
+}
+
+function getSeqByName(name){
+	return sequences[name];
 }
