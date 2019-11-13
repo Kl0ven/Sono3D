@@ -1,18 +1,20 @@
 class Sequenceur {
-	constructor(sequence) {
-		this.seq = sequence;
+	constructor(name, loop, sounds) {
+		this.seq = sounds;
 		this.playing = false;
-		this.loop = false;
+		this.loop = loop;
+		this.name = name;
 
 	}
 
-	this.isPlaying = function(){
+	isPlaying(){
 		return this.playing;
 	}
 
-	this.play = function (){
+	play(){
+		console.log('playing  seq ' + this.name);
 		for (var e in this.seq) {
-			
+
 		}
 	}
 }
