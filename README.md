@@ -5,10 +5,4 @@ Projet S9 environnement virtuel avec sons spatialisés
 
 - Cliquez pour passer en mode curseur
 
-- Se déplacez dans l'environnement avec les flèches clavier
-
-- L'hymne national est relié à la sphère
-
-- Différents cris "d'oiseaux" sont reliés à différents arbres
-
-- Un cri d'oiseau est partout
+- Se déplacez dans l'environnement avec les flèches clavier ou W A S D
