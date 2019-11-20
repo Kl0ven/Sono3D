@@ -23,9 +23,11 @@ for i in range(len(ArraySon)-3):
     z = ArraySon[i+2][11]
     radius_nimbus = ArraySon[i+2][12]
     uri = ArraySon[i+2][13]
-    if (len(ArraySon[i+3][0])==0):
+    if (i == (len(ArraySon)-4)):
         next_id = None
     elif (len(ArraySon[i+2][0])==0):
+        next_id = None
+    elif (len(ArraySon[i+3][0])==0):
         next_id = None
     else:
         next_id=i+2
