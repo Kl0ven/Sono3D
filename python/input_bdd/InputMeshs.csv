@@ -1,0 +1,11 @@
+"Input Meshs",,,,,,,,,,,,,
+"nom","type","scale_x","scale_y","scale_z","nom_seq_click","nom_seq_focus","nom_seq_nimbus","nom_seq_classique","x","y","z","radius_nimbus","uri"
+"arbreb1","tree",1,1,1,"seqc","seq2","seq3","seqa",5,8,15,3,
+"arbreb2","tree",1,1,1,"seq5","seq6","seqa","seq8",1,1,1,4,
+"arbreb3","tree",1,1,1,"seq9","seqa","seq11","seq12",10,5,5,5,
+"sphereb1","sphere",1,1,1,"seqa","seq14","seq15","seq16",10,10,10,6,
+,,,,,,,,,,,,,
+"arbrea1","tree",1,1,1,"seq17","seqc","seq19","seqb",5,8,15,7,
+"arbrea2","tree",1,1,1,"seq21","seq22","seqb","seq24",1,1,1,8,
+"arbrea3","tree",1,1,1,"seq25","seqb","seq28","seq29",10,5,5,9,
+"spherea1","sphere",1,1,1,"seqb","seq3","seq2","seq12",10,10,10,6,

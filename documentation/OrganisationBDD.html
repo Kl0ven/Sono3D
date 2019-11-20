@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organisation de les archives de Base de données </title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="remplir-la-base-de-données">Organisation de les archives de Base de données</h1>
+<p>Ce document va expliquer l’organisation de les différentes tables de la base de données utilisé.</p>
+<p><strong>Table de Meshs</strong></p>
+<p>C’est le tableau où on garde les nôtres objets. Là ils sont organisé pour nom, type, escales en dans les axes x, y et z. Ils ont aussi une référence à un séquenceur qui contient les sons.</p>
+<p><strong>Table de Scène</strong></p>
+<p>Cette table sert à nous montre quelle est le premier objet d'une scène. Avec cette information on peut commencer la séquence pour prendre tous les objets de la scène.</p>
+<p><strong>Table Sequenceur </strong></p>
+<p>Cette table a tous les sons, le durée de chaque son, l'identifiant de chaque son et aussi l’identifiant de le prochain son de la séquence.</p>
+<p><strong>Table de Son</strong></p>
+<p>Ici on trouve les détails de chaque son, comme sa duration, date, volume et le .wav lieu au son. En plus de son nom et de son identifiant.</p>
+<p><strong>Table d’informations générales</strong></p>
+<p>Ce tableau s'appelle en fait sqlite_sequence et on y trouve le nombre d'objets des autres tables.</p>
+
+</div>
+</body>
+</html>

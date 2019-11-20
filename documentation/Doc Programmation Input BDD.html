@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc Programmation Input BDD</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="partie-tableur-to-bdd">Partie Tableur To BDD</h1>
+<p>Ce document va expliquer le fonctionnement du code pour stocker les valeurs dans les différents tableurs vers la bdd</p>
+<h1 id="les-tableurs-dentrées">Les tableurs d’entrées</h1>
+<p>Les tableurs contiennent les infos rentrées par l’utilisateur, attention au type des infos attendues: <strong>bool</strong>, <strong>int</strong> , <strong>float</strong> etc sinon les scripts python vont renvoyer des erreurs</p>
+<p><strong>InputMeshs</strong> doit avoir les meshs regroupé par scène et espacé d’une entrée vide pour permettre la recherche par id une fois dans la bdd</p>
+<p><strong>InputScene</strong> relie le 1er mesh d’une scène: le 1er dans le tableur d’input des meshs, au nom de la scène</p>
+<p><strong>InputSeq</strong> chaque séquenceur peut être relié à un ou plusieurs sons, le 1er son relié va être joué en 1er et etc</p>
+<p><strong>InputSon</strong>, attention le temps est en seconde, pas de virgule. Volume et Spatial sont des booleans .</p>
+<p><strong>Attention</strong> les tableurs doivent être au format <strong>.csv</strong> pour le bon fonctionnement des scripts python</p>
+<h1 id="le-code-python">Le code python</h1>
+<p>Le code et commenté, le principe est le suivant :<br>
+On parse les fichiers csv correspondant et on les stocks dans la bdd.<br>
+Certaines opérations permettent de récupérer l’id de l’objet suivant et de check si il y en a un (ou de passer à la scène suivante)</p>
+</div>
+</body>
+
+</html>
