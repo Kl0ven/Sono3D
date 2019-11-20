@@ -48,7 +48,7 @@ function attachSound(scene, obj){
 
 	if (obj.nom_seq_classic !== null) {
 		mesh.metadata.seq_classic = getSeqByName(obj.nom_seq_classic)
-		mesh.metadata.seq_classic.play()
+		mesh.metadata.seq_classic.play('classic')
 	}
 
 	if (obj.nom_seq_focus !== null) {
