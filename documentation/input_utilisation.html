@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InputUtilisation</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="remplir-la-base-de-données">Remplir la Base De Données</h1>
+<p>Ce document va expliquer les différentes étapes à effectuer pour remplir la base de données de la scène, coter <strong>utilisateur</strong></p>
+<h1 id="les-tableurs-dentrées">Les tableurs d’entrées</h1>
+<p>Les données que l’ont souhaite avoir dans la scène sont à préciser dans les différents tableurs :</p>
+<p><strong>InputMeshs</strong> qui regroupe les différents objets (meshs), chaque objet a des paramètres à renseigner dont une référence à un <strong>séquenceur</strong> qui contient les sons !Les objets sont à regrouper par scène, et à espacer lors de la définition d’une autre scène</p>
+<p><strong>InputScene</strong> lie le 1er objet du groupe d’objet au nom de la scène, utile quand on prépare plusieurs scènes à l’avance.</p>
+<p><strong>InputSeq</strong> prépare les séquenceur, des listes de son(s) que l’on a attachés aux meshs précédemment aux sons qu’on va rentrer juste après !</p>
+<p><strong>InputSon</strong> permet de rentrer les sons dans la base de donnée, quelques paramètres sont à renseigner.</p>
+<p><strong>Attention</strong> les tableurs doivent être au format <strong>.csv</strong> pour le bon fonctionnement des scripts python</p>
+<h1 id="exécuter-le-code-python">Exécuter le code python</h1>
+<p>pour remplir la base de données avec les informations des tableurs il suffit d’exécuter les 4 scripts python associés aux tableurs : <strong>InputMeshs py</strong> ,<strong>InputScene py</strong> , <strong>InputSeq py</strong> et <strong>InputSon py</strong>,<br>
+en utilisant la commande : python .\Input???.py</p>
+</div>
+</body>
+
+</html>

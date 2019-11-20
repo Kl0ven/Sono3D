@@ -11,6 +11,7 @@
             "scale_y": 1.0,
             "scale_z": 1.0,
             "type": "tree",
+            "uri": "",
             "x": 1.0,
             "y": 1.0,
             "z": 1.0
@@ -26,6 +27,7 @@
             "scale_y": 1.0,
             "scale_z": 1.0,
             "type": "tree",
+            "uri": "",
             "x": 10.0,
             "y": 5.0,
             "z": 5.0
@@ -41,12 +43,46 @@
             "scale_y": 1.0,
             "scale_z": 1.0,
             "type": "sphere",
+            "uri": "",
             "x": 10.0,
             "y": 10.0,
             "z": 10.0
         }
     ],
     "sequenceur": [
+        {
+            "loop": true,
+            "nom": "seq6",
+            "sons": [
+                [
+                    2,
+                    "foret_brestoise",
+                    120
+                ]
+            ]
+        },
+        {
+            "loop": true,
+            "nom": "seq8",
+            "sons": [
+                [
+                    2,
+                    "grenouille_fact",
+                    20
+                ]
+            ]
+        },
+        {
+            "loop": true,
+            "nom": "seq11",
+            "sons": [
+                [
+                    0,
+                    "pic_vert",
+                    75
+                ]
+            ]
+        },
         {
             "loop": false,
             "nom": "seqa",
@@ -70,34 +106,12 @@
         },
         {
             "loop": true,
-            "nom": "seq5",
+            "nom": "seq12",
             "sons": [
                 [
                     2,
-                    "feuille_morte",
-                    17
-                ]
-            ]
-        },
-        {
-            "loop": true,
-            "nom": "seq16",
-            "sons": [
-                [
-                    2,
-                    "musique_brest",
-                    50
-                ]
-            ]
-        },
-        {
-            "loop": true,
-            "nom": "seq9",
-            "sons": [
-                [
-                    2,
-                    "lac_canard",
-                    21
+                    "pigeon",
+                    40
                 ]
             ]
         },
@@ -114,6 +128,28 @@
         },
         {
             "loop": true,
+            "nom": "seq16",
+            "sons": [
+                [
+                    2,
+                    "musique_brest",
+                    50
+                ]
+            ]
+        },
+        {
+            "loop": true,
+            "nom": "seq5",
+            "sons": [
+                [
+                    2,
+                    "feuille_morte",
+                    17
+                ]
+            ]
+        },
+        {
+            "loop": true,
             "nom": "seq15",
             "sons": [
                 [
@@ -125,121 +161,88 @@
         },
         {
             "loop": true,
-            "nom": "seq11",
-            "sons": [
-                [
-                    0,
-                    "pic_vert",
-                    75
-                ]
-            ]
-        },
-        {
-            "loop": true,
-            "nom": "seq12",
+            "nom": "seq9",
             "sons": [
                 [
                     2,
-                    "pigeon",
-                    40
-                ]
-            ]
-        },
-        {
-            "loop": true,
-            "nom": "seq6",
-            "sons": [
-                [
-                    2,
-                    "foret_brestoise",
-                    120
-                ]
-            ]
-        },
-        {
-            "loop": true,
-            "nom": "seq8",
-            "sons": [
-                [
-                    2,
-                    "grenouille_fact",
-                    20
+                    "lac_canard",
+                    21
                 ]
             ]
         }
     ],
     "sons": [
         {
-            "nom": "abeille",
-            "spatial": true,
-            "uri": "assets/abeille.wav",
-            "volume": 1
-        },
-        {
-            "nom": "foret_brestoise",
-            "spatial": true,
-            "uri": "assets/foret_brestoise.wav",
-            "volume": 1
-        },
-        {
             "nom": "averse_fact",
             "spatial": true,
             "uri": "assets/averse_fact.wav",
-            "volume": 1
-        },
-        {
-            "nom": "pic_vert",
-            "spatial": true,
-            "uri": "assets/pic_vert.wav",
-            "volume": 1
-        },
-        {
-            "nom": "feuille_morte",
-            "spatial": true,
-            "uri": "assets/feuille_morte.wav",
-            "volume": 1
-        },
-        {
-            "nom": "vent",
-            "spatial": true,
-            "uri": "assets/vent.wav",
-            "volume": 1
-        },
-        {
-            "nom": "musique_brest",
-            "spatial": false,
-            "uri": "assets/musique_brest.wav",
-            "volume": 1
-        },
-        {
-            "nom": "lac_canard",
-            "spatial": true,
-            "uri": "assets/lac_canard.wav",
-            "volume": 1
-        },
-        {
-            "nom": "orage",
-            "spatial": true,
-            "uri": "assets/orage.wav",
-            "volume": 1
-        },
-        {
-            "nom": "chene",
-            "spatial": true,
-            "uri": "assets/chene.wav",
-            "volume": 1
+            "volume": 1.0
         },
         {
             "nom": "grenouille_fact",
             "spatial": true,
             "uri": "assets/grenouille_fact.wav",
-            "volume": 1
+            "volume": 1.0
         },
         {
             "nom": "pigeon",
             "spatial": true,
             "uri": "assets/pigeon.wav",
-            "volume": 1
+            "volume": 1.0
+        },
+        {
+            "nom": "abeille",
+            "spatial": true,
+            "uri": "assets/abeille.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "pic_vert",
+            "spatial": true,
+            "uri": "assets/pic_vert.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "vent",
+            "spatial": true,
+            "uri": "assets/vent.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "musique_brest",
+            "spatial": false,
+            "uri": "assets/musique_brest.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "orage",
+            "spatial": true,
+            "uri": "assets/orage.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "lac_canard",
+            "spatial": true,
+            "uri": "assets/lac_canard.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "feuille_morte",
+            "spatial": true,
+            "uri": "assets/feuille_morte.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "chene",
+            "spatial": true,
+            "uri": "assets/chene.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "foret_brestoise",
+            "spatial": true,
+            "uri": "assets/foret_brestoise.wav",
+            "volume": 1.0
         }
     ]
 }

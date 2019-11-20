@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>octo</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#convertion-bdd-vers-json">Convertion BDD vers JSON</a>
+<ul>
+<li><a href="#format-du-fichier-json">Format du fichier JSON</a></li>
+<li><a href="#interface-bdd-vers-json">Interface BDD vers JSON</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="convertion-bdd-vers-json">Convertion BDD vers JSON</h1>
+<p>La génération de scène se faisant à partir d’un fichier au format JSON et le stockage de la scène et de ses éléments se faisant en SQL il faut réaliser un script réalisant l’interface.</p>
+<h2 id="format-du-fichier-json">Format du fichier JSON</h2>
+<p>Le format de la base de donnée est disponnible dans une documentation dédiée. Je vais donc ici détailler uniquement le format du fichier JSON.</p>
+<h3 id="catégories">Catégories</h3>
+<p>Le fichier est constitué de trois catégories d’éléments.</p>
+<ul>
+<li>
+<p>Meshs, il s’agit des objets qui seront créer dans la scène (arbres, sphère, etc …);</p>
+</li>
+<li>
+<p>Séquenceurs, il s’agit des éléments chargés de gérer les sons, de les lancer un certain temps après une certaine action (ex: lancer un son d’oiseau 5 secondes après un clique sur un buisson);</p>
+</li>
+<li>
+<p>sons, il s’agit des sons en eux même.</p>
+</li>
+</ul>
+<h4 id="composition-dun-élément-de-type-mesh">Composition d’un élément de type mesh</h4>
+<p>Un élément de type mesh est constitué de plusieurs informations:</p>
+<ul>
+<li>
+<p>son nom (qui est unique);</p>
+</li>
+<li>
+<p>les noms des séquenceurs associés aux 4 actions possibles sur un mesh (clique, regard appuyé, entrée dans le nimbus, classique)</p>
+</li>
+<li>
+<p>le rayon du nimbus associé à l’objet</p>
+</li>
+<li>
+<p>les multipicateurs de tailles sur les 3 axes (un floatant)</p>
+</li>
+<li>
+<p>le type de l’objet (important si aucun uri n’est fourni)</p>
+</li>
+<li>
+<p>uri (chemin d’accès au fichier objet)</p>
+</li>
+<li>
+<p>position en x,y,z</p>
+</li>
+</ul>
+<h4 id="composition-dun-élément-de-type-séquenceur">Composition d’un élément de type Séquenceur</h4>
+<ul>
+<li>
+<p>un booléen servant à signaler si le séquenceur doit tourner en boucle</p>
+</li>
+<li>
+<p>le nom (unique )</p>
+</li>
+<li>
+<p>une liste de tuple à 3 éléments: la marge aléatoire autour du temps de déclenchement , le nom du son, le temps de déclenchement</p>
+</li>
+</ul>
+<h4 id="composition-dun-élément-de-type-son">Composition d’un élément de type son</h4>
+<ul>
+<li>nom (unique)</li>
+<li>un booléen servant à signaler si le son est spatialisé</li>
+<li>uri ( nom du fichier)</li>
+<li>volume (entre 0 et 1)</li>
+</ul>
+<h2 id="interface-bdd-vers-json">Interface BDD vers JSON</h2>
+<p>Le programme prend en entrée un nom de scène.</p>
+<p>Il vas chercher en bdd le nom du premier mesh associé a cette scène.</p>
+<p>Grâce à ce nom, il charge un a un tout les meshs de la scène.</p>
+<p>Il charge ensuite chaque séquenceur associé à un de ces meshs.</p>
+<p>Enfin il charge tout les sons de ces séquenceurs</p>
+<h3 id="utilisation">Utilisation</h3>
+<p>Pour utiliser le programme d’interface exécuter, depuis le dossier contenant le programme, la commande : python3 bdd_to_json.py {nom de la scène}</p>
+
+    </div>
+  </div>
+</body>
+
+</html>

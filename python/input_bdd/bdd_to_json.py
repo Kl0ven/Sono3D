@@ -1,4 +1,4 @@
-import sqlite3,json
+import sqlite3,json,sys
 
 sounds_names = []
 
@@ -16,9 +16,9 @@ def load_sounds():
         cursor.execute("SELECT * FROM Son WHERE nom='" + son + "'")
         infos = cursor.fetchall()[0]
         if infos[6] == 1:
-            sounds.append({"nom":infos[1],"uri":infos[2],"volume":infos[5],"spatial":True})
+            sounds.append({"nom":infos[1],"uri":infos[2],"volume":float(infos[5]),"spatial":True})
         else:
-            sounds.append({"nom":infos[1],"uri":infos[2],"volume":infos[5],"spatial":False})
+            sounds.append({"nom":infos[1],"uri":infos[2],"volume":float(infos[5]),"spatial":False})
     return sounds
 
 
@@ -88,7 +88,8 @@ def load_meshs(first_mesh_name):
                       "x" : float(mesh[10]),
                       "y" : float(mesh[11]),
                       "z" : float(mesh[12]),
-                      "radius_nimbus": float(mesh[13])})
+                      "radius_nimbus": float(mesh[13]),
+                      "uri":mesh[15]})
 
         next_id = mesh[14]
 
@@ -127,6 +128,10 @@ def load_scene(name):
         json.dump({"sequenceur":sequenceurs,"sons":sounds,"meshs":meshs},f,sort_keys=True,indent=4)
 
 
-
 if __name__ == '__main__':
-    load_scene("brest")
+    try:
+        nom_scene = sys.argv[1]
+    except:
+        print("you have to put a scene name")
+
+    load_scene(nom_scene)
