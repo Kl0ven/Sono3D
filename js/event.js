@@ -78,12 +78,10 @@ function playSeq(mesh, type) {
 
 
 function updateCocktail(){
-	console.log("###################");
 	// recuperation des sequence
 	let current_playing_seq = []
 	for (var s in sequences) {
 		let seq = sequences[s]
-		console.log(seq.origine);
 		if (seq.isPlaying()) {
 			current_playing_seq.push(seq)
 		}
@@ -94,7 +92,6 @@ function updateCocktail(){
 		return a.getPriority() < b.getPriority() || a.origine_time < b.origine_time;
 	})
 
-	console.log("selection ", current_playing_seq[0].origine);
 	// application de setVolume sur tout les sequence sauf la premiere
 	for (var i = 1; i < current_playing_seq.length; i++) {
 		current_playing_seq[i].setVolume(0.01)
