@@ -78,7 +78,7 @@ function playSeq(mesh, type) {
 
 
 function updateCocktail(){
-	// recuperation des sequence
+	// recuperation des sequences actives
 	let current_playing_seq = []
 	for (var s in sequences) {
 		let seq = sequences[s]
@@ -88,11 +88,14 @@ function updateCocktail(){
 	}
 
 	// triage des sequnces
+	// Par priorite de l'origine puis par temps de debut
 	current_playing_seq.sort((a,b) => {
 		return a.getPriority() < b.getPriority() || a.origine_time < b.origine_time;
 	})
 
-	// application de setVolume sur tout les sequence sauf la premiere
+	// current_playing_seq[0] => priorite max
+	// current_playing_seq[current_playing_seq.length - 1] => priorite min
+	// application de setVolume sur tout les sequences sauf la premiere
 	for (var i = 1; i < current_playing_seq.length; i++) {
 		current_playing_seq[i].setVolume(0.01)
 	}
