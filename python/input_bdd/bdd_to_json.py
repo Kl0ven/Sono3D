@@ -74,6 +74,20 @@ def load_meshs(first_mesh_name):
     next_id = mesh[14]
     meshs.append(mesh)
     meshs_output = []
+    meshs_output.append({"nom": mesh[1],
+                      "type": mesh[2],
+                      "scale_x": float(mesh[3]),
+                      "scale_y": float(mesh[4]),
+                      "scale_z": float(mesh[5]),
+                      "nom_seq_click":mesh[6],
+                      "nom_seq_focus": mesh[7],
+                      "nom_seq_nimbus": mesh[8],
+                      "nom_seq_classic": mesh[9],
+                      "x" : float(mesh[10]),
+                      "y" : float(mesh[11]),
+                      "z" : float(mesh[12]),
+                      "radius_nimbus": float(mesh[13]),
+                      "uri":mesh[15]})
     while next_id is not None:
         mesh = load_mesh_from_id(next_id)[0]
         meshs_output.append({"nom": mesh[1],
