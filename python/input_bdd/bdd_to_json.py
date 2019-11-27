@@ -124,7 +124,7 @@ def load_scene(name):
     meshs = load_meshs(first_mesh_name)
     sequenceurs = load_sequenceurs(meshs)
     sounds = load_sounds()
-    with open("json_scene.json","w") as f:
+    with open("../../scene.json","w") as f:
         json.dump({"sequenceur":sequenceurs,"sons":sounds,"meshs":meshs},f,sort_keys=True,indent=4)
 
 
