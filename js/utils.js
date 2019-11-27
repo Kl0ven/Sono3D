@@ -76,3 +76,12 @@ function allSoundReady(){
 	}
 	return true;
 }
+
+
+function playSeq(mesh, type) {
+	if(mesh.metadata !== null && mesh.metadata.hasOwnProperty(type) && !mesh.metadata[type].isPlaying()){
+		mesh.metadata[type].play(type.split("_")[1])
+	}else if (mesh.parent !== null && mesh.parent.metadata !== null && mesh.parent.metadata.hasOwnProperty(type) && !mesh.parent.metadata[type].isPlaying()) {
+		mesh.parent.metadata[type].play(type.split("_")[1])
+	}
+}
