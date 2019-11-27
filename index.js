@@ -88,10 +88,15 @@ window.onload = function (){
 
 
 		set_FPS_mode(scene, canvas, camera);
+		var ready = false
 		engine.runRenderLoop(function(){
 			if (!allSoundReady()) {
 				return 0;
+			}else if (!ready) {
+				playclassicSound()
+				ready = true
 			}
+
 			let dt = engine.getDeltaTime();
 			whatchObject(dt);
 			updateNimbus();

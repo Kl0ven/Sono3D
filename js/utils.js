@@ -48,7 +48,6 @@ function attachSound(scene, obj){
 
 	if (obj.nom_seq_classic !== null) {
 		mesh.metadata.seq_classic = getSeqByName(obj.nom_seq_classic)
-		mesh.metadata.seq_classic.play('classic')
 	}
 
 	if (obj.nom_seq_focus !== null) {
@@ -83,5 +82,12 @@ function playSeq(mesh, type) {
 		mesh.metadata[type].play(type.split("_")[1])
 	}else if (mesh.parent !== null && mesh.parent.metadata !== null && mesh.parent.metadata.hasOwnProperty(type) && !mesh.parent.metadata[type].isPlaying()) {
 		mesh.parent.metadata[type].play(type.split("_")[1])
+	}
+}
+
+function playclassicSound(){
+	let meshs = scene.meshes
+	for (var i in meshs) {
+		playSeq(meshs[i], "classic");
 	}
 }
