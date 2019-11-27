@@ -67,3 +67,12 @@ function attachSound(scene, obj){
 function getSeqByName(name){
 	return sequences[name];
 }
+
+function allSoundReady(){
+	for (var i = 0; i < sounds.length; i++) {
+		if (!sounds[i].isReady()){
+			return false;
+		}
+	}
+	return true;
+}

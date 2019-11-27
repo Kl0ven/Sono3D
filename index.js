@@ -13,6 +13,7 @@ const focusTime = 3000;
 var focusSoundPlayed = false
 var reticle;
 var sequences = {};
+var sounds = []
 //We start without being locked.
 var isLocked = false;
 window.onload = function (){
@@ -37,7 +38,7 @@ window.onload = function (){
 		// load sound
 		for (var i in data.sons){
 			sound = data.sons[i];
-			loadSound(scene, sound.nom,sound.uri, sound.volume, sound.spatial);
+			sounds.push(loadSound(scene, sound.nom,sound.uri, sound.volume, sound.spatial));
 
 		}
 
@@ -88,6 +89,9 @@ window.onload = function (){
 
 		set_FPS_mode(scene, canvas, camera);
 		engine.runRenderLoop(function(){
+			if (!allSoundReady()) {
+				return 0;
+			}
 			let dt = engine.getDeltaTime();
 			whatchObject(dt);
 			updateNimbus();

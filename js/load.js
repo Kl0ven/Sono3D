@@ -23,4 +23,5 @@ function loadSound(scene, name, uri, vol, spatial){
 		 spatialSound: spatial}) ;
 		son.distanceModel = "exponential";
 		son.setVolume(vol)
+		return son
 }
