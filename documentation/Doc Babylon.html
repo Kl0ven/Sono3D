@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>doc Babylon</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#documentation-babylon.js">Documentation Babylon.js</a>
+<ul>
+<li><a href="#structure">Structure</a></li>
+<li><a href="#index.html">index.html</a></li>
+<li><a href="#scene.json">scene.json</a></li>
+<li><a href="#index.js">index.js</a></li>
+<li><a href="#assets">Assets</a></li>
+<li><a href="#dossier-js">Dossier JS</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="documentation-babylon.js">Documentation Babylon.js</h1>
+<h2 id="structure">Structure</h2>
+<pre><code>SONO3D   
+│   .gitignore   
+│   index.html   
+│   index.js   
+│   LICENSE   
+│   README.md   
+│   scene.json   
+│   
+├───assets   
+│   └───sounds   
+│   
+├───css   
+│       main.css   
+│   
+├───dist   
+│       babylon.custom.js   
+│       babylon.gui.js   
+│       babylon3.js   
+│       cannon.js   
+│       Oimo.js   
+│
+└───js   
+        create.js   
+        event.js    
+        load.js   
+        sequenceur.js   
+        utils.js   
+</code></pre>
+<h2 id="index.html">index.html</h2>
+<p>La page HTML avec le canvas.<br>
+C’est ici qu’on charge tous les scripts js.</p>
+<h2 id="scene.json">scene.json</h2>
+<p>Le JSON à parser.</p>
+<h2 id="index.js">index.js</h2>
+<p>Le point d’entré de l’application.<br>
+ici on définit la callback à appeler dés que la page est prêt, cette cb appelle la fonction <code>loadJSON(json_uri, fonction(data_json))</code>  qui charge le fichier JSON via une requête AJAX puis appelle la callback (<code>fonction</code> ici) avec le JSON en paramètre. C’est dans cette fonction que tout est initialisé :</p>
+<ol>
+<li>On parse le JSON</li>
+<li>On initialise <code>engine</code> et <code>scene</code></li>
+<li>On ajoute des lumières à la scène</li>
+<li>On charge les sons avec la fonction <code>loadSound(scene, name, uri, volume, spatial)</code></li>
+<li>On initialise les <code>Sequenceurs</code> en les stockant dans  le dictionnaire <code>sequences</code></li>
+<li>On crée une camera et un sol</li>
+<li>On charge les objets</li>
+<li>Pour chaque objets on attache les sons avec l’appel de <code>attachSound</code>, les Séquenceurs sont stocker dans la propriété <code>metadata</code> de chaque mesh</li>
+<li>Pour chaque objet si il a un radius pour l’effet nimbus on l’ajoute aux méta-données</li>
+<li>On ajoute le réticule</li>
+<li>On active le mode FPS permettant de verrouiller la souris</li>
+<li>On défini la <code>renderloop</code> avec nos différents événements</li>
+</ol>
+<h2 id="assets">Assets</h2>
+<p>Le dossier <code>assets</code> contient toutes les ressources, tous les sons sont dans le dossier <code>assets/sounds</code>.</p>
+<h2 id="dossier-js">Dossier JS</h2>
+<h3 id="create.js">create.js</h3>
+<p>Le fichier <code>create.js</code> contient toutes les fonctions nécessaires à la création des objets.</p>
+<h4 id="fonction-create_camera">Fonction create_camera</h4>
+<p>La fonction <code>create_camera</code>  crée une camera portant comme nom le paramètre <code>name</code>.  C’est ici qu’on définit les touches d’interaction ZQSD ou ↑↓→←.</p>
+<pre><code>function create_camera(name) =&gt; camera
+</code></pre>
+<h4 id="fonction-create_ground">Fonction create_ground</h4>
+<p>La fonction <code>create_ground</code>  crée un sol portant comme nom le paramètre <code>name</code>.  N.B.: On ajoute aux métadonnées de l’objet le type, ici <code>ground</code>.</p>
+<pre><code>function create_ground(scene, name) =&gt; mesh ground
+</code></pre>
+<h4 id="fonction-create_sphere">Fonction create_sphere</h4>
+<p>La fonction <code>create_sphere</code>  crée une sphère portant comme nom <code>ob.name</code>.  N.B.: On ajoute aux métadonnées de l’objet le type, ici <code>sphere</code>.<br>
+Ici <code>obj</code> est un mesh du <code>scene.json</code>.</p>
+<pre><code>function create_sphere(scene, obj) =&gt; mesh sphere
+</code></pre>
+<h4 id="fonction-create_tree">Fonction create_tree</h4>
+<p>La fonction <code>create_tree</code>  crée un arbre portant comme nom <code>ob.name</code>.  N.B.: On ajoute aux métadonnées de l’objet le type, ici <code>tree</code>.<br>
+Ici <code>obj</code> est un mesh du <code>scene.json</code>.</p>
+<pre><code>function create_tree(scene, obj) =&gt; mesh tree
+</code></pre>
+<h3 id="event.js">event.js</h3>
+<p>Le fichier <code>event.js</code> contient toutes les fonctions qui mettent à jour l’environnement</p>
+<h4 id="fonction-handleclick">Fonction handleClick</h4>
+<p>La fonction <code>handleClick</code>   est utilisée par <code>EventListener</code> sur le clique.<br>
+Elle permet de jouer le son de type <code>click</code> de l’objet que l’utilisateur vise. si l’objet est à porté.</p>
+<pre><code>function handleClick(scene, event) =&gt; None
+</code></pre>
+<h4 id="fonction-whatchobject">Fonction whatchObject</h4>
+<p>La fonction <code>whatchObject</code>   est utilisée pour déclencher le son de type <code>focus</code> de l’objet que l’utilisateur vise. Si l’utilisateur vise un objet pendant au moins  <code>focusTime</code> ms et que l’objet est à porté, le son est joué.</p>
+<pre><code>function whatchObject(dt) =&gt; None
+</code></pre>
+<h4 id="fonction-updatereticle">Fonction updateReticle</h4>
+<p>La fonction <code>updateReticle</code>   change la couleur du réticule si l’objet visé comporte des sons.</p>
+<pre><code>function updateReticle() =&gt; None
+</code></pre>
+<h4 id="fonction-updatenimbus">Fonction updateNimbus</h4>
+<p>La fonction <code>updateNimbus</code>   est utilisée pour déclencher le son de type <code>nimbus</code> des objets à proximité de l’utilisateur.</p>
+<pre><code>function updateNimbus() =&gt; None
+</code></pre>
+<h4 id="fonction-updatecocktail">Fonction updateCocktail</h4>
+<p>La fonction <code>updateCocktail</code>   permet de mettre à jour l’effet cocktail.<br>
+Cela fonctionne de la façon suivante:<br>
+Chaque séquenceur se voit attribuer une priorités par son origine.</p>
+<p>classique &lt; nimbus &lt; focus &lt; Click<br>
+Le son mis en avant par l’effet Cocktail est le son avec la plus grande priorités, si il y a plusieurs sont de la même origine on choisie le plus récent.</p>
+<pre><code>function updateCocktail() =&gt; None
+</code></pre>
+<h3 id="load.js">load.js</h3>
+<p>Le fichier <code>load.js</code> contient toutes les fonctions de chargement de ressources.</p>
+<h4 id="fonction-loadjson">Fonction loadJSON</h4>
+<p>La fonction <code>loadJSON</code>   est utilisée pour charger le JSON, une fois télécharger la fonction appel la fonction cb en lui passant le fichier JSON.</p>
+<pre><code>function loadJSON(url, cb) =&gt; None
+</code></pre>
+<h4 id="fonction-loadsound">Fonction loadSound</h4>
+<p>La fonction <code>loadSound</code>   est utilisée pour charger les sons dans Babylon.js. La fonction retourne un objet de type son de Babylon</p>
+<pre><code>function loadSound(scene, name, uri, vol, spatial) =&gt; Sound
+	scene : la scene de baylon
+	name : le nom du son 
+	uri : le chemin vers le son 
+	vol : le volume du son entre 0 et 1
+	spatial : un boolean, le son est spatialisé ou non 
+</code></pre>
+<h3 id="sequenceur.js">sequenceur.js</h3>
+<p>Le fichier <code>sequenceur.js</code> contient la classe <code>Sequenceur</code></p>
+<pre><code>Sequenceur(name, loop, sounds) ==&gt; sequenceur 
+name : le nom du sequenceur
+loop : boolean le séquenceur doit etre joué une boucle 
+sounds : une liste de paramètres
+</code></pre>
+<h4 id="format-de-la-liste-de-paramètres">Format de la liste de paramètres</h4>
+<pre><code>[[
+  timing1,
+  "nom_du_son1",
+  delta1],
+[
+  timing2,
+  "nom_du_son2",
+  delta2]]
+</code></pre>
+<p>timing : int milliseconde<br>
+delta : int milliseconde</p>
+<h4 id="fonctionnement-du-séquenceur">Fonctionnement du séquenceur</h4>
+<p><img src="https://i.ibb.co/fMrJtQW/Dessin-sans-titre-1.jpg" alt="fonctionnement du sequenceur "></p>
+<h4 id="propriété">Propriété</h4>
+<p>seq =&gt; Liste des sons</p>
+<p>playing =&gt; Le sequenceur est actullement entrain de jouer</p>
+<p>loop =&gt; Le sequenceur tourne en boucle ?</p>
+<p>name =&gt; Le nom du sequenceur</p>
+<p>origine =&gt; l’origine de sequenceur (click, nimbus, focus, classique)</p>
+<h4 id="méthode">Méthode</h4>
+<p>isPlaying() =&gt; Bool</p>
+<p>getPriority() =&gt; Int : La priorité de l’origine</p>
+<p>play(string : origine ) =&gt; None</p>
+<p>setVolume(float : vol) =&gt; None</p>
+<h3 id="utils.js">utils.js</h3>
+<h4 id="fonction-set_fps_mode">Fonction set_FPS_mode</h4>
+<p>Cette fonction permet de verrouiller la souris et de mettre en pleine écran.</p>
+<pre><code>set_FPS_mode(scene, canvas, camera) =&gt; None
+</code></pre>
+<h4 id="fonction-attachsound">Fonction attachSound</h4>
+<p>Cette fonction permet d’attacher les séquenceurs à un objet, les séquenceurs sont stockés dans les métadonnées de l’objet. Ici <code>obj</code> est un mesh du <code>scene.json</code>.</p>
+<pre><code>attachSound(scene, obj) =&gt; None
+</code></pre>
+<h4 id="fonction-allsoundready">Fonction allSoundReady</h4>
+<p>Cette fonction retourne vrai si tous les sons sont chargés, faux sinon.</p>
+<pre><code>allSoundReady() =&gt; Bool
+</code></pre>
+<h4 id="fonction-playseq">Fonction playSeq</h4>
+<p>Cette fonction joue le séquenceur de type <code>origine</code> de l’objet <code>mesh</code> si le séquenceur n’est pas déjà en train de le jouer.</p>
+<pre><code>playSeq(mesh, origine) =&gt; None
+</code></pre>
+
+    </div>
+  </div>
+</body>
+
+</html>
