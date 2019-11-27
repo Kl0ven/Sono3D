@@ -2,57 +2,122 @@
     "meshs": [
         {
             "nom": "arbreb2",
-            "nom_seq_classic": "feuille_morte",
-            "nom_seq_click": "lac_canard",
-            "nom_seq_focus": "vent",
-            "nom_seq_nimbus": "musique_brest",
-            "radius_nimbus": 4.0,
+            "nom_seq_classic": "seq14",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 10.0,
             "scale_x": 1.0,
             "scale_y": 1.0,
             "scale_z": 1.0,
             "type": "tree",
-            "x": 1.0,
+            "uri": "",
+            "x": 10.0,
             "y": 0.0,
             "z": 10.0
+        },
+        {
+            "nom": "arbreb3",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seq1",
+            "nom_seq_focus": "seq10",
+            "nom_seq_nimbus": "seq12",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": 11.0,
+            "y": 0.0,
+            "z": 20.0
+        },
+        {
+            "nom": "sphereb1",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seq7",
+            "nom_seq_focus": "seq8",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 12.0,
+            "y": 0.0,
+            "z": 30.0
+        },
+        {
+            "nom": "sphereb2",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqb",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 13.0,
+            "y": 0.0,
+            "z": 40.0
         }
     ],
     "sequenceur": [
         {
-            "loop": true,
-            "nom": "feuille_morte",
+            "loop": null,
+            "nom": "",
+            "sons": []
+        },
+        {
+            "loop": false,
+            "nom": "seq7",
             "sons": [
                 [
-                    2,
-                    "feuille_morte",
-                    17
+                    0,
+                    "grenouille",
+                    19
                 ]
             ]
         },
         {
             "loop": false,
-            "nom": "musique_brest",
+            "nom": "seq12",
             "sons": [
                 [
                     2,
-                    "musique_brest",
+                    "pigeon",
+                    40
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq10",
+            "sons": [
+                [
+                    2,
+                    "nid_abeille",
                     50
                 ]
             ]
         },
         {
             "loop": false,
-            "nom": "lac_canard",
+            "nom": "seq1",
             "sons": [
                 [
-                    2,
-                    "lac_canard",
-                    21
+                    0,
+                    "abeille",
+                    100
                 ]
             ]
         },
         {
             "loop": false,
-            "nom": "vent",
+            "nom": "seq14",
             "sons": [
                 [
                     2,
@@ -60,80 +125,88 @@
                     26
                 ]
             ]
+        },
+        {
+            "loop": false,
+            "nom": "seq8",
+            "sons": [
+                [
+                    2,
+                    "grenouille_fact",
+                    20
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqb",
+            "sons": [
+                [
+                    0,
+                    "pluie",
+                    16
+                ],
+                [
+                    5,
+                    "vent",
+                    180
+                ],
+                [
+                    10,
+                    "orage",
+                    250
+                ]
+            ]
         }
     ],
     "sons": [
         {
-            "nom": "abeille",
-            "spatial": true,
-            "uri": "abeille.wav",
-            "volume": 1
-        },
-        {
-            "nom": "foret_brestoise",
-            "spatial": true,
-            "uri": "foret_brestoise.wav",
-            "volume": 1
-        },
-        {
-            "nom": "averse_fact",
-            "spatial": true,
-            "uri": "averse_fact.wav",
-            "volume": 1
-        },
-        {
-            "nom": "pic_vert",
-            "spatial": true,
-            "uri": "pic_vert.wav",
-            "volume": 1
-        },
-        {
-            "nom": "feuille_morte",
-            "spatial": true,
-            "uri": "feuille_morte.wav",
-            "volume": 1
-        },
-        {
-            "nom": "vent",
-            "spatial": true,
-            "uri": "vent.wav",
-            "volume": 1
-        },
-        {
-            "nom": "musique_brest",
-            "spatial": false,
-            "uri": "musique_brest.wav",
-            "volume": 1
-        },
-        {
-            "nom": "lac_canard",
-            "spatial": true,
-            "uri": "lac_canard.wav",
-            "volume": 1
-        },
-        {
             "nom": "orage",
             "spatial": true,
             "uri": "orage.wav",
-            "volume": 1
-        },
-        {
-            "nom": "chene",
-            "spatial": true,
-            "uri": "chene.wav",
-            "volume": 1
-        },
-        {
-            "nom": "grenouille_fact",
-            "spatial": true,
-            "uri": "grenouille_fact.wav",
-            "volume": 1
+            "volume": 1.0
         },
         {
             "nom": "pigeon",
             "spatial": true,
             "uri": "pigeon.wav",
-            "volume": 1
+            "volume": 1.0
+        },
+        {
+            "nom": "abeille",
+            "spatial": true,
+            "uri": "abeille.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "vent",
+            "spatial": true,
+            "uri": "vent.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "pluie",
+            "spatial": true,
+            "uri": "pluie.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "nid_abeille",
+            "spatial": true,
+            "uri": "nid_abeille.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "grenouille_fact",
+            "spatial": true,
+            "uri": "grenouille_fact.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "grenouille",
+            "spatial": true,
+            "uri": "grenouille.wav",
+            "volume": 1.0
         }
     ]
 }
