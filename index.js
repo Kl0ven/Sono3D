@@ -93,6 +93,7 @@ window.onload = function (){
 			if (!allSoundReady()) {
 				return 0;
 			}else if (!ready) {
+				console.log("Sound Ready")
 				playclassicSound()
 				ready = true
 			}
