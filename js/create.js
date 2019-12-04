@@ -27,8 +27,20 @@ function create_camera(name){
 function create_ground(scene, name){
 	let sol = BABYLON.Mesh.CreateGround(name,200.0,200.0,2.0,scene) ;
 	sol.checkCollisions = true ;
-	sol.material              = new BABYLON.StandardMaterial("blanc",scene) ;
-	sol.material.diffuseColor  = new BABYLON.Color3(1.0,1.0,1.0) ;
+	sol.material = new BABYLON.StandardMaterial("blanc",scene) ;
+	// sol.material.diffuseColor  = new BABYLON.Color3(1.0,0,0) ;
+	sol.material.diffuseTexture = new BABYLON.Texture('./assets/textures/grass.png',scene);
+	sol.material.specularTexture = new BABYLON.Texture('./assets/textures/grass.png',scene);
+	sol.material.emissiveTexture = new BABYLON.Texture('./assets/textures/grass.png',scene);
+	sol.material.ambientTexture = new BABYLON.Texture('./assets/textures/grass.png',scene);
+	sol.material.diffuseTexture.uScale = 10.0;
+	sol.material.diffuseTexture.vScale = 10.0;
+	sol.material.specularTexture.uScale = 10.0;
+	sol.material.specularTexture.vScale = 10.0;
+	sol.material.emissiveTexture.uScale = 10.0;
+	sol.material.emissiveTexture.vScale = 10.0;
+	sol.material.ambientTexture.uScale = 10.0;
+	sol.material.ambientTexture.vScale = 10.0;
 	sol.metadata = {"type": 'ground'}
 	return sol
 }

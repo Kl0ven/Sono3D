@@ -32,9 +32,19 @@ window.onload = function (){
 		// ==============================================================================================
 		light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0.0,1.0,0.0), scene) ;
 		light.intensity = 0.5
-		spot = new BABYLON.SpotLight("spotLight", new BABYLON.Vector3(0, 30, 0), new BABYLON.Vector3(0, -1, 0), Math.PI / 3, 2, scene);
-		spot.diffuse = new BABYLON.Color3(185/255, 246/255, 1);
-		spot.specular = new BABYLON.Color3(1, 1, 1);
+		
+
+		// Sky material
+		var skyboxMaterial = new BABYLON.SkyMaterial("skyMaterial", scene);
+		skyboxMaterial.backFaceCulling = false;
+		skyboxMaterial.luminance = 0.2
+		skyboxMaterial.rayleigh = 2;
+		skyboxMaterial.inclination = 0.6; // The solar inclination, related to the solar azimuth in interval [0, 1]
+		skyboxMaterial.azimuth = 0.75;
+		// Sky mesh (box)
+		var skybox = BABYLON.Mesh.CreateBox("skyBox", 1000.0, scene);
+		skybox.material = skyboxMaterial;
+
 		// load sound
 		for (var i in data.sons){
 			sound = data.sons[i];
