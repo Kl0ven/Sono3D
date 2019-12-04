@@ -74,6 +74,9 @@ function create_tree(scene, obj){
 
     let leafMaterial = new BABYLON.StandardMaterial("leafMaterial", scene);
     leafMaterial.diffuseColor = new BABYLON.Color3(0.5, 1, 0.5);
+	leafMaterial.diffuseTexture = new BABYLON.Texture('./assets/textures/pine.jpg',scene);
+	leafMaterial.diffuseTexture.uScale = 10.0;
+	leafMaterial.diffuseTexture.vScale = 10.0;
 	let tree = QuickTreeGenerator(name, 17, 12, 3, woodMaterial, leafMaterial, scene);
 
 	tree.position.x = obj.x ;
@@ -83,5 +86,29 @@ function create_tree(scene, obj){
 	tree.scaling.y = obj.scale_y
 	tree.scaling.z = obj.scale_z
 	tree.metadata = {"type": 'tree'}
+	return tree
+}
+
+function create_pine_tree(scene, obj){
+	let name = obj.nom
+	let woodMaterial = new BABYLON.StandardMaterial("wood1", scene);
+    let woodTexture1 = new BABYLON.WoodProceduralTexture("materiautext", 512, scene);
+    woodTexture1.ampScale = 50;
+    woodMaterial.diffuseTexture = woodTexture1;
+
+    let leafMaterial = new BABYLON.StandardMaterial("leafMaterial", scene);
+    leafMaterial.diffuseColor = new BABYLON.Color3(0.5, 1, 0.5);
+	leafMaterial.diffuseTexture = new BABYLON.Texture('./assets/textures/pine.jpg',scene);
+	leafMaterial.diffuseTexture.uScale = 10.0;
+	leafMaterial.diffuseTexture.vScale = 10.0;
+	let tree = simplePineGenerator(5, 50, woodMaterial, leafMaterial, scene);
+	tree.name = name;
+	tree.position.x = obj.x ;
+	tree.position.y = obj.y + 1 ;
+	tree.position.z = obj.z ;
+	tree.scaling.x = obj.scale_x
+	tree.scaling.y = obj.scale_y
+	tree.scaling.z = obj.scale_z
+	tree.metadata = {"type": 'pine_tree'}
 	return tree
 }

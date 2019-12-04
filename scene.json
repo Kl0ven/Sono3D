@@ -10,11 +10,11 @@
             "scale_x": 1.0,
             "scale_y": 1.0,
             "scale_z": 1.0,
-            "type": "tree",
+            "type": "pine_tree",
             "uri": "",
-            "x": 10.0,
+            "x": 20.0,
             "y": 0.0,
-            "z": 10.0
+            "z": 0.0
         },
         {
             "nom": "arbreb3",
