@@ -32,12 +32,12 @@ window.onload = function (){
 		// ==============================================================================================
 		light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0.0,1.0,0.0), scene) ;
 		light.intensity = 0.5
-		
+
 
 		// Sky material
 		var skyboxMaterial = new BABYLON.SkyMaterial("skyMaterial", scene);
 		skyboxMaterial.backFaceCulling = false;
-		skyboxMaterial.luminance = 0.2
+		skyboxMaterial.luminance = 0.5
 		skyboxMaterial.rayleigh = 2;
 		skyboxMaterial.inclination = 0.6; // The solar inclination, related to the solar azimuth in interval [0, 1]
 		skyboxMaterial.azimuth = 0.75;
@@ -73,6 +73,10 @@ window.onload = function (){
 				break;
 				case 'tree':
 				m = create_tree(scene, obj);
+				attachSound(scene, obj);
+				break;
+				case 'pine_tree':
+				m = create_pine_tree(scene, obj);
 				attachSound(scene, obj);
 				break;
 				default:
