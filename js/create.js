@@ -97,10 +97,11 @@ function create_pine_tree(scene, obj){
     woodMaterial.diffuseTexture = woodTexture1;
 
     let leafMaterial = new BABYLON.StandardMaterial("leafMaterial", scene);
-    leafMaterial.diffuseColor = new BABYLON.Color3(0.5, 1, 0.5);
-	leafMaterial.diffuseTexture = new BABYLON.Texture('./assets/textures/pine.jpg',scene);
-	leafMaterial.diffuseTexture.uScale = 10.0;
-	leafMaterial.diffuseTexture.vScale = 10.0;
+    //leafMaterial.diffuseColor = new BABYLON.Color3(0.5, 1, 0.5);
+	leafMaterial.diffuseColor = ﻿new BABYLON.Color3(0, 1, 0)﻿;
+	leafMaterial.ambientTexture = new BABYLON.Texture('./assets/textures/pine.jpg',scene);
+	leafMaterial.ambientTexture.uScale = 10.0;
+	leafMaterial.ambientTexture.vScale = 10.0;
 	let tree = simplePineGenerator(5, 50, woodMaterial, leafMaterial, scene);
 	tree.name = name;
 	tree.position.x = obj.x ;
