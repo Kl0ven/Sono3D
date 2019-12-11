@@ -22,6 +22,6 @@ function loadSound(scene, name, uri, vol, spatial){
 		 autoplay: false,
 		 spatialSound: spatial}) ;
 		son.distanceModel = "exponential";
-		son.setVolume(vol)
+		son.setVolume(maxVolume)
 		return son
 }

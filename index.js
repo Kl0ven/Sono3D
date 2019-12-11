@@ -15,6 +15,7 @@ var reticle;
 var sequences = {};
 var sounds = []
 var shadowGenerator
+const maxVolume = 100
 //We start without being locked.
 var isLocked = false;
 window.onload = function (){
