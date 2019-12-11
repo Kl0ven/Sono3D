@@ -41,6 +41,7 @@ function create_ground(scene, name){
 	sol.material.emissiveTexture.vScale = 10.0;
 	sol.material.ambientTexture.uScale = 10.0;
 	sol.material.ambientTexture.vScale = 10.0;
+	sol.receiveShadows = true;
 	sol.metadata = {"type": 'ground'}
 	return sol
 }

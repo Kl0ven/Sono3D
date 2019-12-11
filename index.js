@@ -14,6 +14,7 @@ var focusSoundPlayed = false
 var reticle;
 var sequences = {};
 var sounds = []
+var shadowGenerator
 //We start without being locked.
 var isLocked = false;
 window.onload = function (){
@@ -31,11 +32,16 @@ window.onload = function (){
 		// Création de sources lumineuses
 		// ==============================================================================================
 		light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0,1,0), scene) ;
+		var light2 = new BABYLON.DirectionalLight("DirectionalLight", new BABYLON.Vector3(0, -1, 0), scene);
+
 		light.intensity = 2
 
 		scene.fogMode = BABYLON.Scene.FOGMODE_EXP;
 		scene.fogDensity = 0.02;
 		scene.fogColor = new BABYLON.Color3(0.9, 0.9, 0.85);
+
+
+		shadowGenerator = new BABYLON.ShadowGenerator(1024, light2);
 
 
 		// Sky material
@@ -90,6 +96,7 @@ window.onload = function (){
 					m.metadata.radius_nimbus = obj.radius_nimbus;
 				}
 			}
+			shadowGenerator.addShadowCaster(m, true)
 
 
 		}
