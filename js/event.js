@@ -88,6 +88,7 @@ function updateCocktail(){
 	// current_playing_seq[0] => priorite max
 	// current_playing_seq[current_playing_seq.length - 1] => priorite min
 	// application de setVolume sur tout les sequences sauf la premiere
+	current_playing_seq[0].setVolume(1)
 	for (var i = 1; i < current_playing_seq.length; i++) {
 		current_playing_seq[i].setVolume(0.01)
 	}
