@@ -30,8 +30,12 @@ window.onload = function (){
 		// ==============================================================================================
 		// Création de sources lumineuses
 		// ==============================================================================================
-		light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0.0,1.0,0.0), scene) ;
-		light.intensity = 0.5
+		light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0,1,0), scene) ;
+		light.intensity = 2
+
+		scene.fogMode = BABYLON.Scene.FOGMODE_EXP;
+		scene.fogDensity = 0.02;
+		scene.fogColor = new BABYLON.Color3(0.9, 0.9, 0.85);
 
 
 		// Sky material

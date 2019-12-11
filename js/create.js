@@ -25,7 +25,7 @@ function create_camera(name){
 
 
 function create_ground(scene, name){
-	let sol = BABYLON.Mesh.CreateGround(name,200.0,200.0,2.0,scene) ;
+	let sol = BABYLON.Mesh.CreateGround(name,220.0,220.0,2.0,scene) ;
 	sol.checkCollisions = true ;
 	sol.material = new BABYLON.StandardMaterial("blanc",scene) ;
 	// sol.material.diffuseColor  = new BABYLON.Color3(1.0,0,0) ;
@@ -77,6 +77,7 @@ function create_tree(scene, obj){
 	leafMaterial.diffuseTexture = new BABYLON.Texture('./assets/textures/pine.jpg',scene);
 	leafMaterial.diffuseTexture.uScale = 10.0;
 	leafMaterial.diffuseTexture.vScale = 10.0;
+	leafMaterial.specularColor = new BABYLON.Color3(0.0, 0.0, 0.0);
 	let tree = QuickTreeGenerator(name, 17, 12, 3, woodMaterial, leafMaterial, scene);
 
 	tree.position.x = obj.x ;
@@ -102,6 +103,7 @@ function create_pine_tree(scene, obj){
 	leafMaterial.ambientTexture = new BABYLON.Texture('./assets/textures/pine.jpg',scene);
 	leafMaterial.ambientTexture.uScale = 10.0;
 	leafMaterial.ambientTexture.vScale = 10.0;
+	leafMaterial.specularColor = new BABYLON.Color3(0.0, 0.0, 0.0);
 	let tree = simplePineGenerator(5, 50, woodMaterial, leafMaterial, scene);
 	tree.name = name;
 	tree.position.x = obj.x ;
