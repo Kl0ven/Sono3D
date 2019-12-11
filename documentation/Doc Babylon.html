@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>doc Babylon</title>
+  <title>Doc Babylon</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
 
 <body class="stackedit">
   <div class="stackedit__left">
     <div class="stackedit__toc">
-      
+
 <ul>
 <li><a href="#documentation-babylon.js">Documentation Babylon.js</a>
 <ul>
@@ -31,33 +31,33 @@
     <div class="stackedit__html">
       <h1 id="documentation-babylon.js">Documentation Babylon.js</h1>
 <h2 id="structure">Structure</h2>
-<pre><code>SONO3D   
-│   .gitignore   
-│   index.html   
-│   index.js   
-│   LICENSE   
-│   README.md   
-│   scene.json   
-│   
-├───assets   
-│   └───sounds   
-│   
-├───css   
-│       main.css   
-│   
-├───dist   
-│       babylon.custom.js   
-│       babylon.gui.js   
-│       babylon3.js   
-│       cannon.js   
-│       Oimo.js   
+<pre><code>SONO3D
+│   .gitignore
+│   index.html
+│   index.js
+│   LICENSE
+│   README.md
+│   scene.json
 │
-└───js   
-        create.js   
-        event.js    
-        load.js   
-        sequenceur.js   
-        utils.js   
+├───assets
+│   └───sounds
+│
+├───css
+│       main.css
+│
+├───dist
+│       babylon.custom.js
+│       babylon.gui.js
+│       babylon3.js
+│       cannon.js
+│       Oimo.js
+│
+└───js
+        create.js
+        event.js
+        load.js
+        sequenceur.js
+        utils.js
 </code></pre>
 <h2 id="index.html">index.html</h2>
 <p>La page HTML avec le canvas.<br>
@@ -141,16 +141,16 @@ Le son mis en avant par l’effet Cocktail est le son avec la plus grande priori
 <p>La fonction <code>loadSound</code>   est utilisée pour charger les sons dans Babylon.js. La fonction retourne un objet de type son de Babylon</p>
 <pre><code>function loadSound(scene, name, uri, vol, spatial) =&gt; Sound
 	scene : la scene de baylon
-	name : le nom du son 
-	uri : le chemin vers le son 
+	name : le nom du son
+	uri : le chemin vers le son
 	vol : le volume du son entre 0 et 1
-	spatial : un boolean, le son est spatialisé ou non 
+	spatial : un boolean, le son est spatialisé ou non
 </code></pre>
 <h3 id="sequenceur.js">sequenceur.js</h3>
 <p>Le fichier <code>sequenceur.js</code> contient la classe <code>Sequenceur</code></p>
-<pre><code>Sequenceur(name, loop, sounds) ==&gt; sequenceur 
+<pre><code>Sequenceur(name, loop, sounds) ==&gt; sequenceur
 name : le nom du sequenceur
-loop : boolean le séquenceur doit etre joué une boucle 
+loop : boolean le séquenceur doit etre joué une boucle
 sounds : une liste de paramètres
 </code></pre>
 <h4 id="format-de-la-liste-de-paramètres">Format de la liste de paramètres</h4>
