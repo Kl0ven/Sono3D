@@ -64,7 +64,7 @@ class Sequenceur {
 	done(){
 		this.doneNb += 1;
 		if (this.doneNb == this.seq.length){
-			this.setVolume(1)
+			this.setVolume(maxVolume)
 			this.playing = false;
 			updateCocktail()
 			if (this.loop){
