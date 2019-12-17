@@ -15,7 +15,7 @@ var reticle;
 var sequences = {};
 var sounds = []
 var shadowGenerator
-const maxVolume = 100
+const maxVolume = 1
 //We start without being locked.
 var isLocked = false;
 window.onload = function (){
@@ -62,7 +62,6 @@ window.onload = function (){
 			sounds.push(loadSound(scene, sound.nom,sound.uri, sound.volume, sound.spatial));
 
 		}
-
 		for (var i in data.sequenceur) {
 			let s = data.sequenceur[i]
 			sequences[s.nom] = new Sequenceur(s.nom, s.loop, s.sons)

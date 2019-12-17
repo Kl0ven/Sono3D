@@ -58,7 +58,7 @@ class Sequenceur {
 		if (!this.isPlaying()) return;
 		for (var e in this.seq) {
 			let s = this.seq[e];
-			s[1].setVolume(vol)
+			s[1].setVolume(vol, 1)
 		}
 	}
 	done(){

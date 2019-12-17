@@ -723,11 +723,6 @@
     ],
     "sequenceur": [
         {
-            "loop": null,
-            "nom": "",
-            "sons": []
-        },
-        {
             "loop": false,
             "nom": "seq040",
             "sons": [
@@ -882,9 +877,13 @@
             ]
         },
         {
-            "loop": null,
+            "loop": false,
             "nom": "seqz",
-            "sons": []
+            "sons": [[
+				0,
+				"zone",
+				0
+			]]
         },
         {
             "loop": false,
@@ -1389,6 +1388,12 @@
             "nom": "pouillot",
             "spatial": true,
             "uri": "pouillot.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "zone",
+            "spatial": true,
+            "uri": "zone.wav",
             "volume": 1.0
         }
     ]
