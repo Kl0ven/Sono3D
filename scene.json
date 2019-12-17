@@ -1,12 +1,572 @@
 {
     "meshs": [
         {
-            "nom": "arbreb2",
-            "nom_seq_classic": "seq14",
+            "nom": "arbrec1",
+            "nom_seq_classic": "seqo",
+            "nom_seq_click": "seqe",
+            "nom_seq_focus": "seq043",
+            "nom_seq_nimbus": "seq059",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": 0.0,
+            "y": 0.0,
+            "z": 75.0
+        },
+        {
+            "nom": "spherec1",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqf",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 1.0,
+            "y": 2.0,
+            "z": 75.0
+        },
+        {
+            "nom": "arbrec2",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqg",
+            "nom_seq_focus": "seq051",
+            "nom_seq_nimbus": "seq060",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": -60.0,
+            "y": 0.0,
+            "z": 72.0
+        },
+        {
+            "nom": "spherec2",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqh",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": -59.0,
+            "y": 2.0,
+            "z": 72.0
+        },
+        {
+            "nom": "arbrec3",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqi",
+            "nom_seq_focus": "seq016",
+            "nom_seq_nimbus": "seq061",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": -42.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "nom": "spherec3",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqj",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": -41.0,
+            "y": 2.0,
+            "z": 0.0
+        },
+        {
+            "nom": "arbrec4",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqk",
+            "nom_seq_focus": "seq041",
+            "nom_seq_nimbus": "seq062",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": -64.0,
+            "y": 0.0,
+            "z": -23.0
+        },
+        {
+            "nom": "spherec4",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seql",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": -63.0,
+            "y": 2.0,
+            "z": -23.0
+        },
+        {
+            "nom": "arbrec5",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqm",
+            "nom_seq_focus": "seq040",
+            "nom_seq_nimbus": "seq063",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": -15.0,
+            "y": 0.0,
+            "z": -50.0
+        },
+        {
+            "nom": "spherec5",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqn",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": -14.0,
+            "y": 2.0,
+            "z": -50.0
+        },
+        {
+            "nom": "arbrec6",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqp",
+            "nom_seq_focus": "seq027",
+            "nom_seq_nimbus": "seq064",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": -78.0,
+            "y": 0.0,
+            "z": -78.0
+        },
+        {
+            "nom": "spherec6",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqq",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": -77.0,
+            "y": 2.0,
+            "z": -78.0
+        },
+        {
+            "nom": "arbrec7",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqr",
+            "nom_seq_focus": "seq054",
+            "nom_seq_nimbus": "seq065",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": 40.0,
+            "y": 0.0,
+            "z": 40.0
+        },
+        {
+            "nom": "spherec7",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqs",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 39.0,
+            "y": 2.0,
+            "z": 40.0
+        },
+        {
+            "nom": "arbrec8",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqt",
+            "nom_seq_focus": "seq08",
+            "nom_seq_nimbus": "seq059",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": 73.0,
+            "y": 0.0,
+            "z": 80.0
+        },
+        {
+            "nom": "spherec8",
+            "nom_seq_classic": "",
+            "nom_seq_click": "sequ",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 72.0,
+            "y": 2.0,
+            "z": 80.0
+        },
+        {
+            "nom": "arbrec9",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqv",
+            "nom_seq_focus": "seq055",
+            "nom_seq_nimbus": "seq063",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": 50.0,
+            "y": 0.0,
+            "z": -50.0
+        },
+        {
+            "nom": "spherec9",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqw",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 49.0,
+            "y": 2.0,
+            "z": -50.0
+        },
+        {
+            "nom": "arbrec10",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqx",
+            "nom_seq_focus": "seq042",
+            "nom_seq_nimbus": "seq064",
+            "radius_nimbus": 15.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "tree",
+            "uri": "",
+            "x": 38.0,
+            "y": 0.0,
+            "z": -80.0
+        },
+        {
+            "nom": "spherec10",
+            "nom_seq_classic": "",
+            "nom_seq_click": "seqy",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 37.0,
+            "y": 2.0,
+            "z": -80.0
+        },
+        {
+            "nom": "arbrec11",
+            "nom_seq_classic": "",
             "nom_seq_click": "",
             "nom_seq_focus": "",
             "nom_seq_nimbus": "",
-            "radius_nimbus": 10.0,
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -8.0,
+            "y": 0.0,
+            "z": 20.0
+        },
+        {
+            "nom": "arbrec12",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": 5.0,
+            "y": 0.0,
+            "z": 55.0
+        },
+        {
+            "nom": "arbrec13",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": 48.0,
+            "y": 0.0,
+            "z": 3.0
+        },
+        {
+            "nom": "arbrec14",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": 78.0,
+            "y": 0.0,
+            "z": -20.0
+        },
+        {
+            "nom": "arbrec15",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": 25.0,
+            "y": 0.0,
+            "z": 68.0
+        },
+        {
+            "nom": "arbrec16",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -74.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "nom": "arbrec17",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -35.0,
+            "y": 0.0,
+            "z": 40.0
+        },
+        {
+            "nom": "arbrec18",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -30.0,
+            "y": 0.0,
+            "z": -30.0
+        },
+        {
+            "nom": "arbrec19",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -80.0,
+            "y": 0.0,
+            "z": -48.0
+        },
+        {
+            "nom": "arbrec20",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": 78.0,
+            "y": 0.0,
+            "z": 25.0
+        },
+        {
+            "nom": "arbrec21",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": 0.0,
+            "y": 0.0,
+            "z": -30.0
+        },
+        {
+            "nom": "arbrec22",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -70.0,
+            "y": 0.0,
+            "z": 28.0
+        },
+        {
+            "nom": "arbrec23",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -50.0,
+            "y": 0.0,
+            "z": -65.0
+        },
+        {
+            "nom": "arbrec24",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -80.0,
+            "y": 0.0,
+            "z": 40.0
+        },
+        {
+            "nom": "arbrec25",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": 70.0,
+            "y": 0.0,
+            "z": -62.0
+        },
+        {
+            "nom": "arbrec26",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
             "scale_x": 1.0,
             "scale_y": 1.0,
             "scale_z": 1.0,
@@ -14,55 +574,151 @@
             "uri": "",
             "x": 20.0,
             "y": 0.0,
-            "z": 0.0
+            "z": -40.0
         },
         {
-            "nom": "arbreb3",
-            "nom_seq_classic": "",
-            "nom_seq_click": "seq1",
-            "nom_seq_focus": "seq10",
-            "nom_seq_nimbus": "seq12",
-            "radius_nimbus": 10.0,
-            "scale_x": 1.0,
-            "scale_y": 1.0,
-            "scale_z": 1.0,
-            "type": "tree",
-            "uri": "",
-            "x": 11.0,
-            "y": 0.0,
-            "z": 20.0
-        },
-        {
-            "nom": "sphereb1",
-            "nom_seq_classic": "",
-            "nom_seq_click": "seq7",
-            "nom_seq_focus": "seq8",
-            "nom_seq_nimbus": "",
-            "radius_nimbus": 10.0,
-            "scale_x": 1.0,
-            "scale_y": 1.0,
-            "scale_z": 1.0,
-            "type": "sphere",
-            "uri": "",
-            "x": 12.0,
-            "y": 0.0,
-            "z": 30.0
-        },
-        {
-            "nom": "sphereb2",
+            "nom": "arbrec27",
             "nom_seq_classic": "",
             "nom_seq_click": "",
             "nom_seq_focus": "",
-            "nom_seq_nimbus": "seqb",
+            "nom_seq_nimbus": "",
+            "radius_nimbus": 0.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "pine_tree",
+            "uri": "",
+            "x": -30.0,
+            "y": 0.0,
+            "z": 68.0
+        },
+        {
+            "nom": "spherec11",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqz",
             "radius_nimbus": 10.0,
             "scale_x": 1.0,
             "scale_y": 1.0,
             "scale_z": 1.0,
             "type": "sphere",
             "uri": "",
-            "x": 13.0,
+            "x": 95.0,
             "y": 0.0,
-            "z": 40.0
+            "z": 95.0
+        },
+        {
+            "nom": "spherec12",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqz",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": -95.0,
+            "y": 0.0,
+            "z": -95.0
+        },
+        {
+            "nom": "spherec13",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqz",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 95.0,
+            "y": 0.0,
+            "z": -95.0
+        },
+        {
+            "nom": "spherec14",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqz",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": -95.0,
+            "y": 0.0,
+            "z": 95.0
+        },
+        {
+            "nom": "spherec15",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqz",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 0.0,
+            "y": 0.0,
+            "z": 95.0
+        },
+        {
+            "nom": "spherec16",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqz",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 0.0,
+            "y": 0.0,
+            "z": -95.0
+        },
+        {
+            "nom": "spherec17",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqz",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": 95.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "nom": "spherec18",
+            "nom_seq_classic": "",
+            "nom_seq_click": "",
+            "nom_seq_focus": "",
+            "nom_seq_nimbus": "seqz",
+            "radius_nimbus": 10.0,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "scale_z": 1.0,
+            "type": "sphere",
+            "uri": "",
+            "x": -95.0,
+            "y": 0.0,
+            "z": 0.0
         }
     ],
     "sequenceur": [
@@ -73,139 +729,666 @@
         },
         {
             "loop": false,
-            "nom": "seq7",
+            "nom": "seq040",
             "sons": [
                 [
                     0,
-                    "grenouille",
-                    19
+                    "40_pinson_des_arbres",
+                    0
                 ]
             ]
         },
         {
             "loop": false,
-            "nom": "seq12",
-            "sons": [
-                [
-                    2,
-                    "pigeon",
-                    40
-                ]
-            ]
-        },
-        {
-            "loop": false,
-            "nom": "seq10",
-            "sons": [
-                [
-                    2,
-                    "nid_abeille",
-                    50
-                ]
-            ]
-        },
-        {
-            "loop": false,
-            "nom": "seq1",
+            "nom": "seqm",
             "sons": [
                 [
                     0,
-                    "abeille",
-                    100
+                    "grive",
+                    0
                 ]
             ]
         },
         {
             "loop": false,
-            "nom": "seq14",
-            "sons": [
-                [
-                    2,
-                    "vent",
-                    26
-                ]
-            ]
-        },
-        {
-            "loop": false,
-            "nom": "seq8",
-            "sons": [
-                [
-                    2,
-                    "grenouille_fact",
-                    20
-                ]
-            ]
-        },
-        {
-            "loop": false,
-            "nom": "seqb",
+            "nom": "seq064",
             "sons": [
                 [
                     0,
-                    "pluie",
-                    16
+                    "64_sous_le_grand_cene",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq060",
+            "sons": [
+                [
+                    0,
+                    "60_le_long_chemin",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqx",
+            "sons": [
+                [
+                    0,
+                    "rougequeue_fb",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq065",
+            "sons": [
+                [
+                    0,
+                    "65_duo_matinal",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqy",
+            "sons": [
+                [
+                    0,
+                    "sol_rougequeue_fb",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqe",
+            "sons": [
+                [
+                    0,
+                    "rougequeue",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqj",
+            "sons": [
+                [
+                    0,
+                    "sol_bergonnette",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq061",
+            "sons": [
+                [
+                    0,
+                    "61_au_fond_du_jardin",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqk",
+            "sons": [
+                [
+                    0,
+                    "grimpereau",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seql",
+            "sons": [
+                [
+                    0,
+                    "sol_grimpereau",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq08",
+            "sons": [
+                [
+                    0,
+                    "08_moineau_domestique",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq042",
+            "sons": [
+                [
+                    0,
+                    "42_grimpereau_des_jardins",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": null,
+            "nom": "seqz",
+            "sons": []
+        },
+        {
+            "loop": false,
+            "nom": "seq027",
+            "sons": [
+                [
+                    0,
+                    "27_mesange_nonnette",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq063",
+            "sons": [
+                [
+                    0,
+                    "63_dans_le_parc",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqw",
+            "sons": [
+                [
+                    0,
+                    "sol_pouillot",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq055",
+            "sons": [
+                [
+                    0,
+                    "55_grive_musicienne",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqo",
+            "sons": [
+                [
+                    0,
+                    "intro",
+                    0
                 ],
                 [
-                    5,
-                    "vent",
-                    180
-                ],
+                    30000,
+                    "fakear_chakra",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq059",
+            "sons": [
                 [
-                    10,
-                    "orage",
-                    250
+                    0,
+                    "59_reveil_au_village",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq054",
+            "sons": [
+                [
+                    0,
+                    "54_rougequeue_front_blanc",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqs",
+            "sons": [
+                [
+                    0,
+                    "sol_moineau",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqp",
+            "sons": [
+                [
+                    0,
+                    "mesange",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqg",
+            "sons": [
+                [
+                    0,
+                    "fauvette_noir",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq051",
+            "sons": [
+                [
+                    0,
+                    "51_fauvette_tete_noire",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "sequ",
+            "sons": [
+                [
+                    0,
+                    "sol_pinson",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqr",
+            "sons": [
+                [
+                    0,
+                    "moineau",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqf",
+            "sons": [
+                [
+                    0,
+                    "sol_rougequeue",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq043",
+            "sons": [
+                [
+                    0,
+                    "43_rougequeue_noir_chant",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqh",
+            "sons": [
+                [
+                    0,
+                    "sol_fauvette",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqv",
+            "sons": [
+                [
+                    0,
+                    "pouillot",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqt",
+            "sons": [
+                [
+                    0,
+                    "pinson",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq041",
+            "sons": [
+                [
+                    0,
+                    "41_pouillot_fitis",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqi",
+            "sons": [
+                [
+                    0,
+                    "bergonnette",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq016",
+            "sons": [
+                [
+                    0,
+                    "16_bergeronnette_grise",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqq",
+            "sons": [
+                [
+                    0,
+                    "sol_mesange",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seq062",
+            "sons": [
+                [
+                    0,
+                    "62_trio_en_lisiere",
+                    0
+                ]
+            ]
+        },
+        {
+            "loop": false,
+            "nom": "seqn",
+            "sons": [
+                [
+                    0,
+                    "sol_grive",
+                    0
                 ]
             ]
         }
     ],
     "sons": [
         {
-            "nom": "orage",
+            "nom": "62_trio_en_lisiere",
             "spatial": true,
-            "uri": "orage.wav",
+            "uri": "62_trio_en_lisiere.wav",
             "volume": 1.0
         },
         {
-            "nom": "pigeon",
-            "spatial": true,
-            "uri": "pigeon.wav",
+            "nom": "fakear_chakra",
+            "spatial": false,
+            "uri": "fakear_chakra.wav",
             "volume": 1.0
         },
         {
-            "nom": "abeille",
-            "spatial": true,
-            "uri": "abeille.wav",
+            "nom": "intro",
+            "spatial": false,
+            "uri": "intro.wav",
             "volume": 1.0
         },
         {
-            "nom": "vent",
+            "nom": "bergonnette",
             "spatial": true,
-            "uri": "vent.wav",
+            "uri": "bergonnette.wav",
             "volume": 1.0
         },
         {
-            "nom": "pluie",
+            "nom": "65_duo_matinal",
             "spatial": true,
-            "uri": "pluie.wav",
+            "uri": "65_duo_matinal.wav",
             "volume": 1.0
         },
         {
-            "nom": "nid_abeille",
+            "nom": "55_grive_musicienne",
             "spatial": true,
-            "uri": "nid_abeille.wav",
+            "uri": "55_grive_musicienne.wav",
             "volume": 1.0
         },
         {
-            "nom": "grenouille_fact",
+            "nom": "51_fauvette_tete_noire",
             "spatial": true,
-            "uri": "grenouille_fact.wav",
+            "uri": "51_fauvette_tete_noire.wav",
             "volume": 1.0
         },
         {
-            "nom": "grenouille",
+            "nom": "sol_fauvette",
             "spatial": true,
-            "uri": "grenouille.wav",
+            "uri": "sol_fauvette.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "63_dans_le_parc",
+            "spatial": true,
+            "uri": "63_dans_le_parc.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_rougequeue_fb",
+            "spatial": true,
+            "uri": "sol_rougequeue_fb.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_bergonnette",
+            "spatial": true,
+            "uri": "sol_bergonnette.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "42_grimpereau_des_jardins",
+            "spatial": true,
+            "uri": "42_grimpereau_des_jardins.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_pouillot",
+            "spatial": true,
+            "uri": "sol_pouillot.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "61_au_fond_du_jardin",
+            "spatial": true,
+            "uri": "61_au_fond_du_jardin.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "mesange",
+            "spatial": true,
+            "uri": "mesange.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_moineau",
+            "spatial": true,
+            "uri": "sol_moineau.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "41_pouillot_fitis",
+            "spatial": true,
+            "uri": "41_pouillot_fitis.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "40_pinson_des_arbres",
+            "spatial": true,
+            "uri": "40_pinson_des_arbres.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "08_moineau_domestique",
+            "spatial": true,
+            "uri": "08_moineau_domestique.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "59_reveil_au_village",
+            "spatial": true,
+            "uri": "59_reveil_au_village.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "grimpereau",
+            "spatial": true,
+            "uri": "grimpereau.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_mesange",
+            "spatial": true,
+            "uri": "sol_mesange.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "pinson",
+            "spatial": true,
+            "uri": "pinson.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_grimpereau",
+            "spatial": true,
+            "uri": "sol_grimpereau.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "rougequeue_fb",
+            "spatial": true,
+            "uri": "rougequeue_fb.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "27_mesange_nonnette",
+            "spatial": true,
+            "uri": "27_mesange_nonnette.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "43_rougequeue_noir_chant",
+            "spatial": true,
+            "uri": "43_rougequeue_noir_chant.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_rougequeue",
+            "spatial": true,
+            "uri": "sol_rougequeue.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_pinson",
+            "spatial": true,
+            "uri": "sol_pinson.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "moineau",
+            "spatial": true,
+            "uri": "moineau.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "grive",
+            "spatial": true,
+            "uri": "grive.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "54_rougequeue_front_blanc",
+            "spatial": true,
+            "uri": "54_rougequeue_front_blanc.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "sol_grive",
+            "spatial": true,
+            "uri": "sol_grive.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "rougequeue",
+            "spatial": true,
+            "uri": "rougequeue.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "16_bergeronnette_grise",
+            "spatial": true,
+            "uri": "16_bergeronnette_grise.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "60_le_long_chemin",
+            "spatial": true,
+            "uri": "60_le_long_chemin.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "fauvette_noir",
+            "spatial": true,
+            "uri": "fauvette_noir.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "64_sous_le_grand_cene",
+            "spatial": true,
+            "uri": "64_sous_le_grand_cene.wav",
+            "volume": 1.0
+        },
+        {
+            "nom": "pouillot",
+            "spatial": true,
+            "uri": "pouillot.wav",
             "volume": 1.0
         }
     ]
